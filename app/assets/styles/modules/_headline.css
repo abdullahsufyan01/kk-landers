@@ -1,0 +1,27 @@
+.headline {
+    font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+    color: #574d6c;
+    text-align: center; 
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    &--lightweight {
+        font-weight: 700;
+    }
+
+    &--black {
+        color: #3d4246; 
+    }
+
+    &--paddingB-15 {
+        padding-bottom: 20px;
+    }
+
+    &--smaller {
+        font-size: 26px; 
+    }
+
+
+
+}

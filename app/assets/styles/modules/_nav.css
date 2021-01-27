@@ -1,0 +1,49 @@
+nav {
+    background-color: #f7f7f7;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 83px;
+
+
+
+}
+
+.navBar {
+    @mixin atLarge {
+        margin-left: 38px; 
+        margin-right: 38px; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        width: 1077px; 
+    }
+
+    &__itemContainer {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    &__item {
+        display: none; 
+        
+
+
+        @mixin atLarge {
+            display: inline; 
+            font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+            text-decoration: none;
+            font-size: 18px; 
+            color: #574d6c; 
+            padding: 0 40px; 
+
+        }
+
+    }
+    
+}
+

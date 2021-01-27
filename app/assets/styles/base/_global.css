@@ -1,0 +1,9 @@
+body { 
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif; 
+    color: blue; 
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}

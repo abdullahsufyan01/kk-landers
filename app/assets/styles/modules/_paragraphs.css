@@ -1,0 +1,43 @@
+.paragraphs {
+    font-family: 'Lato','bree_serifregular',Arial,Lucida,sans-serif;
+    color: $paragraphGrey;
+    text-align: center; 
+    font-weight: 400; 
+    margin-top: 8px; 
+   
+    font-size: 18px; 
+    line-height: 27px; 
+
+
+
+    &--black {
+        color: #3d4246; 
+    }
+
+    &--happiness {
+        padding-top: 30px; 
+    }
+
+    &--weAreHere {
+        font-size: 21px; 
+    }
+
+    &--upper {
+        text-transform: uppercase;
+        color: #201439;
+        font-weight: 700; 
+    }
+
+    &--b-margin {
+        margin-bottom: 45px;
+        @mixin atLarge {
+            margin-bottom: 60px; 
+        }
+        
+    }
+    &--t-margin {
+        margin-top: 40px; 
+    }
+
+
+}

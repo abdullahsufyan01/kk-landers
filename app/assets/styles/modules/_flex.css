@@ -1,0 +1,54 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+
+    &--center {
+        align-items: center;
+        justify-items: center;
+    }
+
+    &--justify {
+        justify-content: center; 
+    }
+
+    &--basis {
+        flex-basis: 42%;  
+    }
+
+    &--basis45 {
+        flex-basis: 55%; 
+    }
+
+    &--padding-b-15 {
+        padding-bottom: 35px; 
+    }
+
+    &--hide {
+        display: none; 
+        @mixin atLarge {
+            display: flex; 
+        }
+    }
+
+    @mixin atLarge {
+        &--row {
+            flex-direction: row;
+            justify-content: space-between; 
+        }
+
+        &--row-centered {
+            flex-direction: row;
+            justify-content: center; 
+        }
+
+        &--growEqual {
+            flex-grow: 1; 
+            padding: 0 0 0 0; 
+            max-width: 289px; 
+        }
+        &--topPadding {
+            padding-top: 27px; 
+        }
+    
+    }
+}

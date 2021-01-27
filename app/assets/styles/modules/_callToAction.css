@@ -1,0 +1,10 @@
+.callToAction {
+    max-width: 1077px; 
+    
+    &--sideItem {
+        @mixin atLarge {
+            max-width: 370px; 
+        }
+        
+    }
+}

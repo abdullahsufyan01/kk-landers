@@ -1,0 +1,90 @@
+.FAQ {
+    color: #594f6e; 
+    background-color: #f4f4f4;
+    padding: 20px; 
+    margin-bottom: 20px; 
+
+    &__headline {
+        font-family: "open_sanssemibold",Arial,sans-serif;
+        font-size: 20px; 
+        letter-spacing: 1px;
+        font-weight: 600;
+
+    }
+
+    &--paddingTop  {
+        @mixin atLarge {
+            padding-top: 25px; 
+        }
+      
+    }
+
+
+    &__paragraph {
+        font-family: "open_sansregular",Arial,sans-serif;
+        font-size: 16px; 
+        line-height: 24px; 
+        font-weight: 400; 
+        color: #231341; 
+
+    }
+
+    &__content {
+        display: none; 
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+
+    }
+
+    &__circle {
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        background:#ccc;
+        position: relative; 
+    }
+
+
+    &__before {
+        position: absolute;
+        width: 14px;
+        height: 1px;
+        background-color: white;
+        border-radius: 0;
+        top: 9px;
+        left: 2px; 
+    }
+
+    &__after {
+        position: absolute;
+        width: 14px;
+        height: 1px;
+        background-color: white;
+        border-radius: 0;
+        top: 8px;
+        right: 2px; 
+        transform: rotate(-90deg);
+    }
+
+    &__content.is-visible {
+        display: block;
+	    height: auto;
+	    opacity: 1;
+    }
+
+    &__heading {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+
+    &--openInfo {
+        display: block; 
+        transition: transform 0.5s; 
+
+    }
+}

@@ -1,0 +1,7 @@
+.happiness {
+
+    &--strong {
+        font-family: 'Lato','bree_serifregular',Arial,Lucida,sans-serif;
+        font-weight: 700;
+    }
+}

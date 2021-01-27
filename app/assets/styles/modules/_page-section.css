@@ -1,0 +1,27 @@
+.page-section{
+    padding-top: 18px; 
+    margin-top: 29px; 
+    padding-bottom: 30px;
+
+    &--testimonial {
+        margin-top: 0px; 
+    }
+
+
+    @mixin atLarge {
+        margin-top: 0px; 
+        padding-top: 43px;
+        padding-bottom: 50px;
+    }
+
+    &--insideSection {
+        margin-top: 5px;
+
+    }
+
+    &--grey {
+        background-color: $mainGrey;
+    }
+
+
+}

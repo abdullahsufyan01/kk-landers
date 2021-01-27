@@ -1,0 +1,42 @@
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--flexEnd {
+        @mixin atLarge {
+            justify-content: flex-end; 
+            
+        }
+    }
+
+    &--paddingRight {
+        padding-right: 50px; 
+    }
+
+    &--spacing {
+        padding-right: 10px;
+        padding-left: 10px; 
+    }
+
+
+    &--iconHeight {
+        height: 250px;
+
+
+    }
+
+    &--maxWidth {
+        max-width: 980px; 
+        margin: 0 auto; 
+    }
+
+    &--paddingBottom {
+        padding-bottom: 15px; 
+    }
+
+    &--marginTop {
+        margin-top: 15px; 
+    }
+
+}

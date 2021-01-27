@@ -1,0 +1,113 @@
+.testimonial {
+    background-color: $mainGrey; 
+    display: flex;
+    padding: 30px 15px 0px 15px;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 4px;
+    border-style: solid;
+    margin-bottom: 30px;
+
+    @mixin atLarge {
+        max-width: 250px; 
+        padding-left: 30px;
+        padding-right: 30px; 
+
+
+    }
+
+    &--hide {
+        display: none; 
+        @mixin atLarge {
+            display: block;  
+        }
+    }
+    
+
+    &--pink {
+        border-color: $testimonialPink; 
+        background-color: $testimonialPinkBackground;
+        @mixin atLarge{
+            margin-right: 20px; 
+
+        }
+       
+    }
+
+    &--blue {
+        border-color: $testimonialBlue; 
+        background-color: $testimonialBlueBackground;
+        @mixin atLarge {
+            margin-right: 20px; 
+        }
+        
+    }
+
+    &--yellow {
+        border-color: $testimonialYellow;
+        background-color: $testimonialYellowBackground;
+        
+    }
+
+    &--orange {
+        background-color: $testimonialOrangeBackground; 
+        border-color: $testimonialOrange; 
+        @mixin atLarge{
+            margin-right: 20px; 
+
+        }
+    }
+
+    &--purple {
+        background-color: $testimonialPurpleBackground;
+        border-color: $testimonialPurple; 
+        @mixin atLarge{
+            margin-right: 20px; 
+
+        }
+    }
+
+    &--green {
+        background-color: $testimonialGreenBackground; 
+        border-color: $testimonialGreen; 
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 75.97px;
+        border-style: solid;
+        border-width: 3px;
+    }
+
+    &__heading {
+        font-family: "open_sansbold",Arial,sans-serif;
+        color: #231341;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+        padding-bottom: 25px;
+        padding-top: 30px;
+        margin-bottom: 0; 
+    }
+
+    &__quote {
+        font-family: "open_sansregular",Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30.4px;
+        color: #80768e;
+    }
+
+    &__author {
+        align-self: flex-end;
+        font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+        color:#706780;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0; 
+    }
+
+
+}

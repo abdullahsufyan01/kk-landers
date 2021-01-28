@@ -15,13 +15,23 @@
 
     @mixin atLarge {
         flex-direction: row;
-        height: 565px;
+        height: 665px;
         padding-top: 21px;
         padding-bottom: 15px;
     }
 
     &--strong {
         font-family: "open_sansbold",Arial,sans-serif;
+    }
+
+    &--discount {
+        color: #03bbdd;
+
+    }
+
+    &--oldPrice {
+        color: $mainOrange; 
+
     }
 
     &__medium {
@@ -76,7 +86,7 @@
 
 
     &__title {
-        font-family: 'breeserif-regular-webfont',Georgia,"Times New Roman",serif;
+        font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
         line-height: 1.5em;
         font-weight: normal;
         text-align: center;
@@ -91,6 +101,7 @@
             padding-bottom: 10px; 
          
         }
+
     
     }
 
@@ -131,7 +142,7 @@
 
     &__perkItem {
         background: url('assets/images/checkmark.jpg') no-repeat left top;
-        font-family: open_sansregular,Arial,sans-serif;
+        font-family: 'open_sansregular',Arial,sans-serif;
         background-size: 20px 20px;
         color: #000000;
         background-position-y: 10px;
@@ -143,6 +154,16 @@
 
     &__price {
         text-transform: uppercase;
+
+        @mixin atLarge {
+           margin-top: 0;
+           margin-bottom: 0; 
+           font-size: 1.5rem;
+        }
+    }
+
+    &__priceNoUpper {
+    
 
         @mixin atLarge {
            margin-top: 0;

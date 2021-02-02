@@ -20,6 +20,13 @@
         padding-bottom: 15px;
     }
 
+    &--shorterHeight {
+        @mixin atLarge {
+            height: 550px; 
+        }
+        
+    }
+
     &--strong {
         font-family: "open_sansbold",Arial,sans-serif;
     }

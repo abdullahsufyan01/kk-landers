@@ -173,6 +173,8 @@
     }
 
     &__btn {
+        width: 90%; 
+        margin: 0 auto; 
         @mixin atLarge {
             margin-right: 40px; 
           

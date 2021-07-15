@@ -1,12 +1,18 @@
 .price {
     color: #231341;
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 46.2px;
+    /* line-height: 46.2px; */
     font-family: "open_sansbold",Arial,sans-serif;
     text-align: center;
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
     margin-top: 0; 
 
+    @mixin atLarge {
+        margin-bottom: 10px; 
+        margin-top: 0; 
+        line-height: 46.2px;
+        font-size: 22px;
+    }
    
 }

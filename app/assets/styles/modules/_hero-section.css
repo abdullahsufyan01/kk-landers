@@ -99,13 +99,14 @@
         text-align: center;
         color: $mainOrange;
         font-size: 1.625rem;
-        padding-top: 20px;
+        padding-top: 0px;
         
         margin: auto;
 
         @mixin atLarge {
             font-size: 1.44rem; 
             padding-bottom: 10px; 
+            padding-top: 20px;
          
         }
 
@@ -137,6 +138,8 @@
     &__perkList {
         list-style-type: none;
         padding-left: 20px; 
+        margin-bottom: 5px;
+        margin-top: 5px;
         
 
         @mixin atLarge {
@@ -150,13 +153,22 @@
     &__perkItem {
         background: url('assets/images/checkmark.jpg') no-repeat left top;
         font-family: 'open_sansregular',Arial,sans-serif;
-        background-size: 20px 20px;
+        background-size: 15px 15px;
         color: #000000;
-        background-position-y: 10px;
-        padding-left: 24px;
-        padding-right: 20px;  
-        line-height: 2.4em;
-        font-size: 1rem; 
+        background-position-y: 6px;
+        padding-left: 20px;
+        padding-right: 10px;  
+        line-height: 2em;
+        font-size: 0.8rem; 
+
+        @mixin atLarge {
+            font-size: 1rem;
+            line-height: 2.4em;
+            padding-right: 20px; 
+            padding-left: 24px;
+            background-position-y: 10px;
+            background-size: 20px 20px;
+        }
     }
 
     &__price {
@@ -180,7 +192,7 @@
     }
 
     &__btn {
-        width: 90%; 
+        width: 95%; 
         margin: 0 auto; 
         @mixin atLarge {
             margin-right: 40px; 
@@ -197,6 +209,21 @@
         }
     }
 
+    &__floating-footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        padding: 5px 0px 15px;
+        background-color: white;
+        border-top: 2px solid grey;
+        z-index: 9999;
+
+        @mixin atLarge {
+            position: relative;
+            width: auto;
+            border: none
+        }
+    }
 
 }
 

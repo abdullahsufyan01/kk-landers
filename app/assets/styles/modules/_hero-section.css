@@ -99,13 +99,14 @@
         text-align: center;
         color: $mainOrange;
         font-size: 1.625rem;
-        padding-top: 20px;
+        padding-top: 0px;
         
         margin: auto;
 
         @mixin atLarge {
             font-size: 1.44rem; 
             padding-bottom: 10px; 
+            padding-top: 20px;
          
         }
 
@@ -137,6 +138,8 @@
     &__perkList {
         list-style-type: none;
         padding-left: 20px; 
+        margin-bottom: 5px;
+        margin-top: 5px;
         
 
         @mixin atLarge {
@@ -159,7 +162,28 @@
         font-size: 1rem; 
     }
 
-    &__price {
+    &__perkItem-subscribe {
+        background: url('assets/images/checkmark.jpg') no-repeat left top;
+        font-family: 'open_sansregular',Arial,sans-serif;
+        background-size: 15px 15px;
+        color: #000000;
+        background-position-y: 6px;
+        padding-left: 20px;
+        padding-right: 10px;  
+        line-height: 2em;
+        font-size: 0.8rem; 
+
+        @mixin atLarge {
+            font-size: 1rem;
+            line-height: 2.4em;
+            padding-right: 20px; 
+            padding-left: 24px;
+            background-position-y: 10px;
+            background-size: 20px 20px;
+        }
+    }
+
+     &__price {
         text-transform: uppercase;
 
         @mixin atLarge {
@@ -180,14 +204,16 @@
     }
 
     &__btn {
-        width: 90%; 
+        width: 85%; 
         margin: 0 auto; 
         @mixin atLarge {
             margin-right: 40px; 
+            width: 95%;
           
         }
         @mixin atLargest {
             margin-right: 0px; 
+            width: 95%;
         }
     }
 
@@ -197,6 +223,22 @@
         }
     }
 
+    &__floating-footer {
+        width: 100%;
+        max-width: 760px;
+        position: fixed;
+        bottom: 0px;
+        padding: 5px 0px 15px;
+        z-index: 9999;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atLarge {
+            position: relative;
+            width: auto;
+            border: none
+        }
+    }
 
 }
 

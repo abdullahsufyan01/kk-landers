@@ -6,12 +6,10 @@
     font-size: 14px; 
     text-align: center;
     padding-bottom: 45px; 
-
+        
     &__nav {
         display: flex; 
         flex-direction: row;
-  
-
     }
 
     &--clearMargin {
@@ -27,4 +25,22 @@
     &--anchor {
         color: white; 
     }
+}
+
+.footer-subscribe {
+    background-color: #333333; 
+    color: white; 
+    font-family: "open_sansregular",Arial,sans-serif;
+    font-weight: 500; 
+    font-size: 14px; 
+    text-align: center;
+    padding-bottom: 100px; 
+    
+    
+    @mixin atLarge {
+        margin-bottom: 0px;
+        padding-bottom: 45px; 
+    }
+
+    
 }

@@ -3,8 +3,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 83px;
+    min-height: 60px;
 
+    @mixin atLarge {
+        min-height: 83px;
+    }
 
 
 }

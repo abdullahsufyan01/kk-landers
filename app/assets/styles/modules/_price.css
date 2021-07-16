@@ -1,5 +1,18 @@
 .price {
     color: #231341;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 46.2px;
+    font-family: "open_sansbold",Arial,sans-serif;
+    text-align: center;
+    margin-bottom: 10px; 
+    margin-top: 0; 
+
+   
+}
+
+.price-subscribe {
+    color: #231341;
     font-size: 1.3rem;
     font-weight: 700;
     /* line-height: 46.2px; */

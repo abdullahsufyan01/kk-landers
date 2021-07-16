@@ -153,6 +153,18 @@
     &__perkItem {
         background: url('assets/images/checkmark.jpg') no-repeat left top;
         font-family: 'open_sansregular',Arial,sans-serif;
+        background-size: 20px 20px;
+        color: #000000;
+        background-position-y: 10px;
+        padding-left: 24px;
+        padding-right: 20px;  
+        line-height: 2.4em;
+        font-size: 1rem; 
+    }
+
+    &__perkItem-subscribe {
+        background: url('assets/images/checkmark.jpg') no-repeat left top;
+        font-family: 'open_sansregular',Arial,sans-serif;
         background-size: 15px 15px;
         color: #000000;
         background-position-y: 6px;
@@ -171,7 +183,7 @@
         }
     }
 
-    &__price {
+     &__price {
         text-transform: uppercase;
 
         @mixin atLarge {
@@ -192,14 +204,16 @@
     }
 
     &__btn {
-        width: 95%; 
+        width: 85%; 
         margin: 0 auto; 
         @mixin atLarge {
             margin-right: 40px; 
+            width: 95%;
           
         }
         @mixin atLargest {
             margin-right: 0px; 
+            width: 95%;
         }
     }
 
@@ -211,12 +225,13 @@
 
     &__floating-footer {
         width: 100%;
+        max-width: 760px;
         position: fixed;
         bottom: 0px;
         padding: 5px 0px 15px;
-        background-color: white;
-        border-top: 2px solid grey;
         z-index: 9999;
+        margin-left: auto;
+        margin-right: auto;
 
         @mixin atLarge {
             position: relative;

@@ -10,6 +10,7 @@
     max-width: 1077px; 
     margin-left: auto;
     margin-right: auto; 
+    margin-top: 77px;
 
     
 
@@ -18,6 +19,7 @@
         height: 665px;
         padding-top: 21px;
         padding-bottom: 15px;
+        margin-top: 0;
     }
 
     &--shorterHeight {

@@ -8,45 +8,151 @@ nav {
     @mixin atLarge {
         min-height: 83px;
     }
-
-
 }
 
-.navBar {
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #E2E8F0;
+
     @mixin atLarge {
-        margin-left: 38px; 
-        margin-right: 38px; 
-        display: flex; 
-        flex-direction: row; 
-        align-items: center; 
-        justify-content: space-between; 
-        width: 1077px; 
+        position: static
     }
-
-    &__itemContainer {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    &__item {
-        display: none; 
-        
-
-
-        @mixin atLarge {
-            display: inline; 
-            font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
-            text-decoration: none;
-            font-size: 18px; 
-            color: #574d6c; 
-            padding: 0 40px; 
-
-        }
-
-    }
-    
 }
 
+html {
+    scroll-padding-top: 77px;
+
+    @mixin atLarge {
+        scroll-padding-top: 0;
+    }
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    padding: .5rem 1.5rem;
+    
+    @mixin atLarge {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 61px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+
+    @mixin atLarge {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        align-items: center;
+        box-shadow: none;
+        background-color: transparent;
+        width: auto;
+        }
+}
+
+.nav-link {
+    font-size: 18px; 
+    font-weight: 400;
+    color: #475569;
+    text-decoration: none;
+    font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+
+    @mixin atLarge {
+        display: none;
+    }
+}
+
+.nav-item {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid lightgrey;
+    width: 90%;
+
+    @mixin atLarge {
+        margin-left: 4rem;
+        list-style: none;
+        width: auto;
+        border: none;
+    }
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu.active {
+    background-color: white;
+    left: 0;
+}
+
+.nav-overlay.active {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 1
+}
+
+
+.nav-overlay {
+   background-color: rgba(0, 0, 0, 0, 0);
+}
+
+.hamburger.active {
+   background-color: transparent;
+}
+
+.hamburger.active .bar:nth-child(2) {
+   opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+   transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+   transform: translateY(-8px) rotate(-45deg);
+}

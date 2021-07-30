@@ -1,42 +1,76 @@
+import '../../assets/fonts/stylesheet.css';
 
+import '../styles/styles.css';
+import 'lazysizes';
+import toggle from './modules/FAQ.js';
+import {
+	showSlides,
+	plusSlidesMinus,
+	plusSlidesPlus,
+	slideIndex,
+} from './modules/PastKrates.js';
 
-import '../../assets/fonts/stylesheet.css'
-
-import '../styles/styles.css'
-import 'lazysizes'
-import toggle from './modules/FAQ.js'
-import {showSlides, plusSlidesMinus, plusSlidesPlus, slideIndex} from './modules/PastKrates.js'
-
-
-
-if(module.hot){
-    module.hot.accept()
+if (module.hot) {
+	module.hot.accept();
 }
-
 
 //Building FAQ dropdown
 
-var faqList = Array.from(document.querySelectorAll('.FAQ'))
+var faqList = Array.from(document.querySelectorAll('.FAQ'));
 
-faqList.forEach(faq => {
-    faq.addEventListener('click', function (event) {  
-        // Prevent default link behavior
-        event.preventDefault();  
-        // Get the content
-        var content = this.children[1];
-        if (!content) return;
-        // Toggle the content
-        toggle(content);
-    }, false)
-})
+faqList.forEach((faq) => {
+	faq.addEventListener(
+		'click',
+		function (event) {
+			// Prevent default link behavior
+			event.preventDefault();
+			// Get the content
+			var content = this.children[1];
+			if (!content) return;
+			// Toggle the content
+			toggle(content);
+		},
+		false
+	);
+});
 
-//Getting pastkrates animation to work 
+//Getting pastkrates animation to work
 
 showSlides(slideIndex);
 
-var prev = document.querySelector('.pastKrates__prev')
-prev.addEventListener('click', plusSlidesMinus)
+var prev = document.querySelector('.pastKrates__prev');
+prev.addEventListener('click', plusSlidesMinus);
 
-var prev = document.querySelector('.pastKrates__next')
-prev.addEventListener('click', plusSlidesPlus)
+var prev = document.querySelector('.pastKrates__next');
+prev.addEventListener('click', plusSlidesPlus);
 
+// Nav bar stuff
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const navOverlay = document.querySelector('.nav-overlay');
+
+// so we don't error on other pages
+if (hamburger) {
+	hamburger.addEventListener('click', mobileMenu);
+}
+
+// opens the mobile menu and activates overlay
+function mobileMenu() {
+	hamburger.classList.toggle('active');
+	navMenu.classList.toggle('active');
+	navOverlay.classList.toggle('active');
+}
+
+const navLink = document.querySelectorAll('.nav-link');
+
+// so we don't error on other pages
+if (navLink) {
+	navLink.forEach((n) => n.addEventListener('click', closeMenu));
+}
+
+// closes the mobile menu and deactivates overlay
+function closeMenu() {
+	hamburger.classList.remove('active');
+	navMenu.classList.remove('active');
+	navOverlay.classList.remove('active');
+}

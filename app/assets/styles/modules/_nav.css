@@ -23,13 +23,13 @@ header {
     }
 }
 
-html {
+/* html {
     scroll-padding-top: 77px;
 
     @mixin atLarge {
         scroll-padding-top: 0;
     }
-}
+} */
 
 ul {
     padding-inline-start: 0px;

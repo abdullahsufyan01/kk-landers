@@ -1,0 +1,248 @@
+.hero-section-nav{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Open Sans",Arial,sans-serif; 
+    font-weight: 500;
+    align-items: flex-start;
+    max-width: 1077px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 77px;
+
+    
+
+    @mixin atLarge {
+        flex-direction: row;
+        height: 665px;
+        padding-top: 21px;
+        padding-bottom: 15px;
+        margin-top: 0;
+    }
+
+    &--shorterHeight {
+        @mixin atLarge {
+            height: 550px; 
+        }
+        
+    }
+
+    &--strong {
+        font-family: "open_sansbold",Arial,sans-serif;
+    }
+
+    &--discount {
+        color: #03bbdd;
+
+    }
+
+    &--oldPrice {
+        color: $mainOrange; 
+
+    }
+
+    &__medium {
+        max-width: 667;
+        margin-left: auto; 
+        margin-right: auto; 
+
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__imgLarge {
+        display: none; 
+        @mixin atLarge {
+            display: block; 
+        }
+    }
+
+    &__imgSmall {
+        @mixin atLarge {
+            display: none; 
+        }
+    }
+
+    
+
+    &__imgDesktop {
+        display: none;
+        max-width: 553px;
+
+        @mixin atLarge {
+            display: block;
+        }
+    }
+
+    &__mobileDetails {
+        margin: 0 auto; 
+    }
+
+    &__imgMobile {
+        display: block;
+        max-width: 375px;
+
+        @mixin atLarge {
+            display: none;
+        }
+    }
+
+
+
+    &__title {
+        font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+        line-height: 1.5em;
+        font-weight: normal;
+        text-align: center;
+        color: $mainOrange;
+        font-size: 1.625rem;
+        padding-top: 0px;
+        
+        margin: auto;
+
+        @mixin atLarge {
+            font-size: 1.44rem; 
+            padding-bottom: 10px; 
+            padding-top: 20px;
+         
+        }
+
+    
+    }
+
+    &__subtitle {
+        font-family: 'bree_serifregular',Georgia,"Times New Roman",serif;
+        line-height: 1.3em;
+        font-weight: 500;
+        text-align: center;
+        color:#594f6e;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        max-width: 684px; 
+
+        @mixin atMedium {
+            font-size: 30px; 
+        }
+
+        @mixin atLarge {
+            font-size: 1.625rem; 
+            text-align: start;
+            margin-left: -38px; 
+          
+        }
+
+    }
+    &__perkList {
+        list-style-type: none;
+        padding-left: 20px; 
+        margin-bottom: 5px;
+        margin-top: 5px;
+        
+
+        @mixin atLarge {
+            margin-bottom: 0; 
+            padding-left: 0px; 
+
+        }
+       
+    }
+
+    &__perkItem {
+        background: url('assets/images/checkmark.jpg') no-repeat left top;
+        font-family: 'open_sansregular',Arial,sans-serif;
+        background-size: 20px 20px;
+        color: #000000;
+        background-position-y: 10px;
+        padding-left: 24px;
+        padding-right: 20px;  
+        line-height: 2.4em;
+        font-size: 1rem; 
+    }
+
+    &__perkItem-subscribe {
+        background: url('assets/images/checkmark.jpg') no-repeat left top;
+        font-family: 'open_sansregular',Arial,sans-serif;
+        background-size: 15px 15px;
+        color: #000000;
+        background-position-y: 6px;
+        padding-left: 20px;
+        padding-right: 10px;  
+        line-height: 2em;
+        font-size: 0.8rem; 
+
+        @mixin atLarge {
+            font-size: 1rem;
+            line-height: 2.4em;
+            padding-right: 20px; 
+            padding-left: 24px;
+            background-position-y: 10px;
+            background-size: 20px 20px;
+        }
+    }
+
+     &__price {
+        text-transform: uppercase;
+
+        @mixin atLarge {
+           margin-top: 0;
+           margin-bottom: 0; 
+           font-size: 1.5rem;
+        }
+    }
+
+    &__priceNoUpper {
+    
+
+        @mixin atLarge {
+           margin-top: 0;
+           margin-bottom: 0; 
+           font-size: 1.5rem;
+        }
+    }
+
+    &__btn {
+        width: 85%; 
+        margin: 0 auto; 
+        @mixin atLarge {
+            margin-right: 40px; 
+            width: 95%;
+          
+        }
+        @mixin atLargest {
+            margin-right: 0px; 
+            width: 95%;
+        }
+    }
+
+    &__desktopDetails {
+        @mixin atLarge {
+            padding-top: 10px;
+        }
+    }
+
+    &__floating-footer {
+        width: 100%;
+        max-width: 760px;
+        position: fixed;
+        bottom: 0px;
+        padding: 5px 0px 15px;
+        z-index: 9999;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atLarge {
+            position: relative;
+            width: auto;
+            border: none
+        }
+    }
+
+}
+
+
+

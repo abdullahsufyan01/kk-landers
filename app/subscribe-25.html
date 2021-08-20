@@ -86,23 +86,40 @@
             <p class="announcementBar--marginZero">August Krates now available! Join today and yours will ship out on the next business day.</p>
         </div>
         <!--Nav Bar-->
-        <div>
-            <nav>
-                <div class="navBar">           
-                        <img src="assets/images/kk-logo-black.png" width="170" height="41" alt="ketokratelogo">
-                        <div class="navBar__itemContainer">
-                            <a class="navBar__item" href="#howItWorks">How It Works</a>
-                            <a class="navBar__item" href="#FAQ">FAQ</a>
-                            <a class="navBar__item" href="#pastKrates">Past Krates</a>
-                        </div>
-                </div>            
-            </nav>
-        </div>
+        <header class="header">
+			<nav class="navbar">
+				<a href="#">
+					<img
+						src="assets/images/kk-logo-black.png"
+						width="170"
+						height="41"
+						alt="ketokratelogo"
+					/>
+				</a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#howItWorks" class="nav-link">How It Works</a>
+					</li>
+					<li class="nav-item">
+						<a href="#FAQ" class="nav-link">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#pastKrates" class="nav-link">Past Krates</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<div class="nav-overlay"></div>
 
 
          <!--Hero Section-->
         <div>
-                <div class="flex flex--row hero-section">
+                <div class="flex flex--row hero-section-nav">
                     <div class="img img--paddingRight img--marginTop">
                         <picture>
                             <source type="image/webp" srcset="assets/images/krate25off.webp">
@@ -112,7 +129,7 @@
                        
                     </div>
                    
-                    <div class="flex--basis hero-section__medium">
+                    <div class="flex--basis hero-section-nav__medium">
                         <div class="wrapper">
                             <h1 class="hero-section__title hero-section__title--left">We're Here For You</h1>
                             <h2 class="hero-section__subtitle headline--tablet">During This Time of Uncertainity, We're Still Shipping out Keto Friendly Snacks to Your Door to Help You Stay on Track</h2>

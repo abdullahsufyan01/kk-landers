@@ -35,6 +35,10 @@ ul {
     padding-inline-start: 0px;
 }
 
+.bogoHeader {
+    margin-top: 74px;
+}
+
 .navbar {
     display: flex;
     flex-direction: row-reverse;

@@ -178,31 +178,39 @@
 			</p>
 		</div>
 		<!--Nav Bar-->
-		<div>
-			<nav>
-				<div class="navBar">
+        <header class="header">
+			<nav class="navbar">
+				<a href="#">
 					<img
 						src="assets/images/kk-logo-black.png"
 						width="170"
 						height="41"
 						alt="ketokratelogo"
 					/>
-					<div class="navBar__itemContainer">
-						<a class="navBar__item" href="#howItWorks"
-							>How It Works</a
-						>
-						<a class="navBar__item" href="#FAQ">FAQ</a>
-						<a class="navBar__item" href="#pastKrates"
-							>Past Krates</a
-						>
-					</div>
+				</a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#howItWorks" class="nav-link">How It Works</a>
+					</li>
+					<li class="nav-item">
+						<a href="#FAQ" class="nav-link">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#pastKrates" class="nav-link">Past Krates</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
 				</div>
 			</nav>
-		</div>
+		</header>
+		<div class="nav-overlay"></div>
 
 		<!--Hero Section-->
 		<div>
-			<div class="flex flex--row hero-section">
+			<div class="flex flex--row hero-section-nav">
 				<div class="img img--paddingRight img--marginTop">
 					<picture>
 						<source

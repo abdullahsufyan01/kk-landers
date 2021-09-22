@@ -36,7 +36,10 @@ ul {
 }
 
 .bogoHeader {
-    margin-top: 74px;
+    margin-top: 0;
+    @mixin atLarge {
+        margin-top: 74px;
+    }
 }
 
 .navbar {

@@ -131,7 +131,7 @@
 
         @mixin atLarge {
             font-size: 1.625rem; 
-            text-align: start;
+            text-align: center;
             margin-left: -38px; 
           
         }

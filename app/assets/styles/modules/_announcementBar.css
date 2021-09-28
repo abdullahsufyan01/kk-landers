@@ -28,7 +28,9 @@
 }
 
 .bogoAnnouncementBar {
+	display: none;
     @mixin atLarge {
+		display: inline; 
 		background-color: rgb(194, 0, 13);
 		padding-top: 20px;
 		padding-bottom: 20px;

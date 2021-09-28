@@ -236,6 +236,7 @@
         margin-right: auto;
 
         @mixin atLarge {
+            margin-top: 15px;
             position: relative;
             width: auto;
             border: none

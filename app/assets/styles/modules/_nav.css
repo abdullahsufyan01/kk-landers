@@ -202,3 +202,31 @@ ul {
     }
     
 }
+
+.ml-4 {
+    margin-left: 2.5em;
+    @mixin atLarge {
+        display:none;
+    }
+
+}
+
+.logo {
+    display:none;
+    @mixin atLarge {
+        display:inline;
+    }
+}
+
+.navSubBtn {
+	background-color: $mainBlue;
+	color: white;
+	border-radius: 5px;
+	padding: 0.8em 0.5em;
+	text-align: center;
+    text-decoration: none;
+    margin-right: -.5em;
+	@mixin atLarge {
+		display: none;
+	}
+}

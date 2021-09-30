@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/newyearbogo"
+  to = "https://www.subscribe.ketokrate.com/bogo"
+  status = 302
+  force = true

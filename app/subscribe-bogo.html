@@ -101,37 +101,14 @@
 			as="font"
 			crossorigin="anonymous"
 		/>
-		<!--START GRIN-->
-		<script>
-			(function () {
-				Grin = window.Grin || (window.Grin = []);
-				var s = document.createElement('script');
-				s.type = 'text/javascript';
-				s.async = true;
-				s.src = 'https://d38xvr37kwwhcm.cloudfront.net/js/grin-sdk.js';
-				var x = document.getElementsByTagName('script')[0];
-				x.parentNode.insertBefore(s, x);
-			})();
-		</script>
-		<!--END GRIN-->
-
-		<!-- BEGIN PRIVY ASYNCHRONOUS WIDGET CODE -->
-		<script type="text/javascript">
-			var _d_site = _d_site || 'B87CC71779AC3C2524C04052';
-			(function (p, r, i, v, y) {
-				p[i] =
-					p[i] ||
-					function () {
-						(p[i].q = p[i].q || []).push(arguments);
-					};
-				v = r.createElement('script');
-				v.async = 1;
-				v.src = 'https://widget.privy.com/assets/widget.js';
-				y = r.getElementsByTagName('script')[0];
-				y.parentNode.insertBefore(v, y);
-			})(window, document, 'Privy');
-		</script>
-		<!-- END PRIVY ASYNCHRONOUS WIDGET CODE -->
+		<style>
+			@media (max-width: 768px) {
+				#gorgias-chat-container iframe#chat-button,
+				#gorgias-chat-container iframe#chat-campaigns {
+					margin-bottom: 50px !important;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->

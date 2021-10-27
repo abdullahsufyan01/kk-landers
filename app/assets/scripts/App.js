@@ -76,7 +76,9 @@ function closeMenu() {
 }
 
 var homebtn = document.querySelector('.btntest');
-homebtn.addEventListener('click', getReChargeCheckout);
+homebtn.addEventListener('click', function(){
+	alert('hey')
+});
 
 
 var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));

@@ -27,6 +27,18 @@
         
     }
 
+    &--purple {
+        background-color: $mainPurple
+    }
+
+    &--blue {
+        background-color: $mainPurple
+    }
+
+    &--orange {
+        background-color: $mainPurple
+    }
+
     
 
     

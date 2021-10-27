@@ -75,10 +75,10 @@ function closeMenu() {
 	navOverlay.classList.remove('active');
 }
 
-var homebtn = document.querySelector('.btntest');
-homebtn.addEventListener('click', function(){
-	alert('hey')
-});
+// var homebtn = document.querySelector('.btntest');
+// homebtn.addEventListener('click', function(){
+// 	alert('hey')
+// });
 
 
 var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));
@@ -89,6 +89,8 @@ buttonsArray.forEach(button => {
 
 
 async function getReChargeCheckout () {
+
+	alert('worked')
 
 	const response = await fetch('https://9dbda4a7f5ca.ngrok.io/rechargeCheckout', {
 		method: 'POST', 

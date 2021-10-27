@@ -29,6 +29,10 @@
         
     }
 
+    &--margin-timer {
+        margin-top: 15px; 
+    }
+
     &--strong {
         font-family: "open_sansbold",Arial,sans-serif;
     }

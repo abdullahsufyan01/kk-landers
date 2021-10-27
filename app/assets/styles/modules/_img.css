@@ -39,4 +39,8 @@
         margin-top: 15px; 
     }
 
+    &--timer {
+        width: 300px; 
+    }
+
 }

@@ -4,7 +4,6 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    background-color: $mainBlue;
     color: white;
     text-decoration: none;
     font-size: 1.375rem; 
@@ -22,6 +21,14 @@
 
     @mixin atLarge {
         width: 100%;
+    }
+
+    &--blue {
+        background-color: $mainBlue;
+    }
+
+    &--purple {
+        background-color: $mainPurple;
     }
 
     &--orange {

@@ -75,6 +75,8 @@ function closeMenu() {
 	navOverlay.classList.remove('active');
 }
 
+var homebtn = document.querySelector('.btntest');
+homebtn.addEventListener('click', getReChargeCheckout);
 
 
 var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));
@@ -86,7 +88,7 @@ buttonsArray.forEach(button => {
 
 async function getReChargeCheckout () {
 
-	const response = await fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
+	const response = await fetch('https://9dbda4a7f5ca.ngrok.io/rechargeCheckout', {
 		method: 'POST', 
 		mode: 'cors', 
 		cache: 'no-cache',

@@ -88,7 +88,7 @@ buttonsArray.forEach(button => {
 
 function getReChargeCheckout () {
 
-	alert('worked')
+
 
 	fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
 		method: 'POST', 

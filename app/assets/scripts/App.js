@@ -90,7 +90,7 @@ async function getReChargeCheckout () {
 
 	alert('worked')
 
-	const response = await fetch('https://9dbda4a7f5ca.ngrok.io/rechargeCheckout', {
+	const response = await fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
 		method: 'POST', 
 		mode: 'cors', 
 		cache: 'no-cache',

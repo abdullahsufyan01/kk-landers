@@ -74,3 +74,58 @@ function closeMenu() {
 	navMenu.classList.remove('active');
 	navOverlay.classList.remove('active');
 }
+
+
+
+var buttonsArray = Array.from(document.querySelectorAll('.btn'));
+
+buttonsArray.forEach(button => {
+	button.addEventListener('click', getReChargeCheckout)
+})
+
+
+async function getReChargeCheckout () {
+
+	const response = await fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
+		method: 'POST', 
+		mode: 'cors', 
+		cache: 'no-cache',
+		headers: {
+			'Content-Type':'application'
+		}
+		
+	})
+
+	const data = await response.json()
+
+	//console.log('worked', data)
+
+	const url = `https://checkout.rechargeapps.com/r/checkout/${data.token}`
+	console.log(url)
+	window.location.href = url; 
+
+	//response.json().then(data => console.log('here', data))
+
+
+
+}
+
+//Building FAQ dropdown
+
+// var faqList = Array.from(document.querySelectorAll('.FAQ'));
+
+// faqList.forEach((faq) => {
+// 	faq.addEventListener(
+// 		'click',
+// 		function (event) {
+// 			// Prevent default link behavior
+// 			event.preventDefault();
+// 			// Get the content
+// 			var content = this.children[1];
+// 			if (!content) return;
+// 			// Toggle the content
+// 			toggle(content);
+// 		},
+// 		false
+// 	);
+// });

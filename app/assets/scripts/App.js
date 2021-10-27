@@ -86,11 +86,11 @@ buttonsArray.forEach(button => {
 })
 
 
-async function getReChargeCheckout () {
+function getReChargeCheckout () {
 
 	alert('worked')
 
-	const response = await fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
+	fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
 		method: 'POST', 
 		mode: 'cors', 
 		cache: 'no-cache',
@@ -98,21 +98,49 @@ async function getReChargeCheckout () {
 			'Content-Type':'application'
 		}
 		
+	}).then(response => response.json())
+	.then(data =>  {
+		const url = `https://checkout.rechargeapps.com/r/checkout/${data.token}`
+		window.location.href = url; 
+
 	})
 
-	const data = await response.json()
 
-	//console.log('worked', data)
-
-	const url = `https://checkout.rechargeapps.com/r/checkout/${data.token}`
-	console.log(url)
-	window.location.href = url; 
 
 	//response.json().then(data => console.log('here', data))
 
 
 
 }
+
+
+// async function getReChargeCheckout () {
+
+// 	alert('worked')
+
+// 	const response = await fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
+// 		method: 'POST', 
+// 		mode: 'cors', 
+// 		cache: 'no-cache',
+// 		headers: {
+// 			'Content-Type':'application'
+// 		}
+		
+// 	})
+
+// 	const data = await response.json()
+
+// 	//console.log('worked', data)
+
+// 	const url = `https://checkout.rechargeapps.com/r/checkout/${data.token}`
+// 	console.log(url)
+// 	window.location.href = url; 
+
+// 	//response.json().then(data => console.log('here', data))
+
+
+
+// }
 
 //Building FAQ dropdown
 

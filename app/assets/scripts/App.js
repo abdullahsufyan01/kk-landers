@@ -77,7 +77,7 @@ function closeMenu() {
 
 
 
-var buttonsArray = Array.from(document.querySelectorAll('.btn'));
+var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));
 
 buttonsArray.forEach(button => {
 	button.addEventListener('click', getReChargeCheckout)

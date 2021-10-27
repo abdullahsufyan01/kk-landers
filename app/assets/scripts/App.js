@@ -75,10 +75,8 @@ function closeMenu() {
 	navOverlay.classList.remove('active');
 }
 
-// var homebtn = document.querySelector('.btntest');
-// homebtn.addEventListener('click', function(){
-// 	alert('hey')
-// });
+var homebtn = document.querySelector('.btntest');
+homebtn.addEventListener('click', getReChargeCheckout);
 
 
 var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));

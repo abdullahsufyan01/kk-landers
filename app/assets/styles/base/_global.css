@@ -1,6 +1,8 @@
 body { 
     font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif; 
     color: blue; 
+    position: relative;
+
 }
 
 img { 

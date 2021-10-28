@@ -88,22 +88,27 @@ buttonsArray.forEach(button => {
 
 function getReChargeCheckout () {
 
+	console.log('hey')
+
+	// document.getElementsByClassName('overlay')[0].style.display = "flex"
+	// document.getElementsByClassName('loader2')[0].style.display = "block"
 
 
-	fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
-		method: 'POST', 
-		mode: 'cors', 
-		cache: 'no-cache',
-		headers: {
-			'Content-Type':'application'
-		}
+
+	// fetch('https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout', {
+	// 	method: 'POST', 
+	// 	mode: 'cors', 
+	// 	cache: 'no-cache',
+	// 	headers: {
+	// 		'Content-Type':'application'
+	// 	}
 		
-	}).then(response => response.json())
-	.then(data =>  {
-		const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`
-		window.location.href = url; 
+	// }).then(response => response.json())
+	// .then(data =>  {
+	// 	const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`
+	// 	window.location.href = url; 
 
-	})
+	// })
 
 
 

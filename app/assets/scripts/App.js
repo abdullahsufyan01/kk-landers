@@ -106,11 +106,12 @@ function getReChargeCheckout () {
 		
 	}).then(response => response.json())
 	.then(data =>  {
+
+		const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`
+		window.location.href = url; 
 		document.getElementsByClassName('overlay')[0].style.display = "none"
 		document.getElementsByClassName('container')[0].style.display = "none"
 		document.getElementsByClassName('loader2')[0].style.display = "none"
-		const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`
-		window.location.href = url; 
 
 	})
 

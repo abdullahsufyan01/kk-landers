@@ -100,7 +100,7 @@ function getReChargeCheckout () {
 		
 	}).then(response => response.json())
 	.then(data =>  {
-		const url = `https://checkout.rechargeapps.com/r/checkout/${data.token}`
+		const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`
 		window.location.href = url; 
 
 	})

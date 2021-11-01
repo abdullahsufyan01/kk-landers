@@ -82,11 +82,41 @@ function closeMenu() {
 var buttonsArray = Array.from(document.querySelectorAll('.btnredirect'));
 
 buttonsArray.forEach(button => {
-	button.addEventListener('click', getReChargeCheckout)
+	button.addEventListener('click', function(){
+
+		var discountCode = ''
+
+		//Running function based on discountCode 
+		if(window.location.pathname == "/spookybogo"){
+			discountCode = 'SPOOKYBOGO'
+		}
+
+		if(window.location.pathname == "/25-off"){
+			discountCode = 'FIRST25OFF'
+		}
+
+		if(window.location.pathname == "/stay-25"){
+			discountCode = 'FIRST25OFF'
+		}
+
+		if(window.location.pathname == "/bogo"){
+			discountCode = '2021BOGO'
+		}
+
+		if(window.location.pathname == "/spookybogorecharge"){
+			discountCode = 'SPOOKYBOGO'
+		}
+
+		if(window.location.pathname == "/subscribe-bogo"){
+			discountCode = '2021BOGO'
+		}
+
+		getReChargeCheckout({discountCode})
+	})
 })
 
 
-function getReChargeCheckout () {
+function getReChargeCheckout (data = {}) {
 
 	console.log('hey')
 
@@ -101,8 +131,9 @@ function getReChargeCheckout () {
 		mode: 'cors', 
 		cache: 'no-cache',
 		headers: {
-			'Content-Type':'application'
-		}
+			'Content-Type':'application/json'
+		}, 
+		body: JSON.stringify(data)
 		
 	}).then(response => response.json())
 	.then(data =>  {

@@ -1,31 +1,31 @@
 [[redirects]]
   from = "/newyearbogo"
-  to = "https://join.ketokrate.com/"
+  to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
 
 
 [[redirects]]
   from = "/spookybogo"
-  to = "https://join.ketokrate.com/"
+  to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
 
 [[redirects]]
   from = "/bogo"
-  to = "https://join.ketokrate.com/"
+  to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
 
 [[redirects]]
   from = "/subscribe-bogo"
-  to = "https://join.ketokrate.com/"
+  to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
 
 
 [[redirects]]
   from = "/30-off"
-  to = "https://join.ketokrate.com/"
+  to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true

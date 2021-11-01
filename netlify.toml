@@ -3,3 +3,10 @@
   to = "https://www.subscribe.ketokrate.com/bogo"
   status = 302
   force = true
+
+
+  [[redirects]]
+  from = "/spookybogo"
+  to = "https://join.ketokrate.com/"
+  status = 302
+  force = true

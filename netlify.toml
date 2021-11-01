@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/newyearbogo"
-  to = "https://www.subscribe.ketokrate.com/bogo"
+  to = "https://join.ketokrate.com/"
   status = 302
   force = true
 
@@ -13,6 +13,12 @@
 
 [[redirects]]
   from = "/bogo"
+  to = "https://join.ketokrate.com/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/subscribe-bogo"
   to = "https://join.ketokrate.com/"
   status = 302
   force = true

@@ -29,3 +29,27 @@
   to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/black-friday-came-early"
+  to = "https://join.ketokrate.com"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/black-friday-deal"
+  to = "https://join.ketokrate.com"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/cyber-monday-sale"
+  to = "https://join.ketokrate.com"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/christmas-special"
+  to = "https://join.ketokrate.com"
+  status = 302
+  force = true

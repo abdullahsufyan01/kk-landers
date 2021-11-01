@@ -5,8 +5,14 @@
   force = true
 
 
-  [[redirects]]
+[[redirects]]
   from = "/spookybogo"
+  to = "https://join.ketokrate.com/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bogo"
   to = "https://join.ketokrate.com/"
   status = 302
   force = true

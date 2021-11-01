@@ -88,6 +88,7 @@ buttonsArray.forEach(button => {
 
 		//Running function based on discountCode 
 		if(window.location.pathname == "/spookybogo"){
+			console.log('this worked')
 			discountCode = 'SPOOKYBOGO'
 		}
 

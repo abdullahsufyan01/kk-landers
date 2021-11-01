@@ -90,26 +90,32 @@ buttonsArray.forEach(button => {
 		if(window.location.pathname == "/spookybogo"){
 			console.log('this worked')
 			discountCode = 'SPOOKYBOGO'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		if(window.location.pathname == "/25-off"){
 			discountCode = 'FIRST25OFF'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		if(window.location.pathname == "/stay-25"){
 			discountCode = 'FIRST25OFF'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		if(window.location.pathname == "/bogo"){
 			discountCode = '2021BOGO'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		if(window.location.pathname == "/spookybogorecharge"){
 			discountCode = 'SPOOKYBOGO'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		if(window.location.pathname == "/subscribe-bogo"){
 			discountCode = '2021BOGO'
+			window.dataLayer.push({'discountCode': discountCode})
 		}
 
 		getReChargeCheckout({discountCode})

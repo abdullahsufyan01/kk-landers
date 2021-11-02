@@ -53,3 +53,9 @@
   to = "https://join.ketokrate.com"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/2krazyketos/"
+  to = "https://join.ketokrate.com/25-off"
+  status = 302
+  force = true

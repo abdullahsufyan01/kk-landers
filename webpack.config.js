@@ -23,6 +23,7 @@ class RunAfterCompile {
 	}
 }
 
+/*********** CSS CONFIG **********/
 let cssConfig = {
 	test: /\.css$/i,
 	use: [
@@ -46,6 +47,8 @@ let pages = fse
 		});
 	});
 
+
+/*********** CONFIG **********/
 let config = {
 	entry: './app/assets/scripts/App.js',
 	plugins: pages,
@@ -54,6 +57,7 @@ let config = {
 	},
 };
 
+/*********** DEVELOPMENT **********/
 if (currentTask == 'dev') {
 	cssConfig.use.unshift('style-loader');
 	(config.output = {
@@ -72,6 +76,7 @@ if (currentTask == 'dev') {
 		(config.mode = 'development');
 }
 
+/*********** PRODUCTION **********/
 if (currentTask == 'build') {
 	config.module.rules.push({
 		test: /\.js$/,

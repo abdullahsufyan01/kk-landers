@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fse = require('fs-extra');
 
+/*********** Plugins and features we will be using in webpack **********/
 const postCSSPlugins = [
 	require('postcss-import'),
 	require('postcss-mixins'),

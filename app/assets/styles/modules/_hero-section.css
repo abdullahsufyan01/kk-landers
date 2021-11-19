@@ -104,7 +104,7 @@
         font-weight: normal;
         text-align: center;
         color: $mainOrange;
-        font-size: 1.625rem;
+        font-size: 1.2rem;
         padding-top: 0px;
         
         margin: auto;
@@ -141,6 +141,17 @@
         }
 
     }
+
+    &__subtitle--msaCopy {
+        @mixin atLarge {
+     
+            margin-left: 0px; 
+          
+        }
+
+    }
+
+
     &__perkList {
         list-style-type: none;
         padding-left: 20px; 

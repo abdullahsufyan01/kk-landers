@@ -16,7 +16,7 @@
 
     @mixin atLarge {
         flex-direction: row;
-        height: 665px;
+        height: auto;
         padding-top: 21px;
         padding-bottom: 15px;
         margin-top: 0;

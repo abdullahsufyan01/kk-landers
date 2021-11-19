@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fse = require('fs-extra');
 
+/*********** Plugins and features we will be using in webpack **********/
 const postCSSPlugins = [
 	require('postcss-import'),
 	require('postcss-mixins'),
@@ -23,6 +24,7 @@ class RunAfterCompile {
 	}
 }
 
+/*********** CSS CONFIG **********/
 let cssConfig = {
 	test: /\.css$/i,
 	use: [
@@ -46,6 +48,8 @@ let pages = fse
 		});
 	});
 
+
+/*********** CONFIG **********/
 let config = {
 	entry: './app/assets/scripts/App.js',
 	plugins: pages,
@@ -54,6 +58,7 @@ let config = {
 	},
 };
 
+/*********** DEVELOPMENT **********/
 if (currentTask == 'dev') {
 	cssConfig.use.unshift('style-loader');
 	(config.output = {
@@ -72,6 +77,7 @@ if (currentTask == 'dev') {
 		(config.mode = 'development');
 }
 
+/*********** PRODUCTION **********/
 if (currentTask == 'build') {
 	config.module.rules.push({
 		test: /\.js$/,

@@ -14,5 +14,12 @@
         
     }
 
+    &__msaCopy {
+        @mixin atLarge {
+            padding: 0px; 
+        }
+        
+    }
+
   
 }

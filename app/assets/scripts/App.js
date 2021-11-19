@@ -119,6 +119,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/msa-bogo"){
+			discountCode = 'MSABOGO'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

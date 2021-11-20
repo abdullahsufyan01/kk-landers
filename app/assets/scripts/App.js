@@ -132,6 +132,7 @@ buttonsArray.forEach(button => {
 function getReChargeCheckout (data = {}) {
 
 	console.log('hey')
+	console.log(data)
 
 	document.getElementsByClassName('overlay')[0].style.display = "flex"
 	document.getElementsByClassName('container')[0].style.display = "flex"

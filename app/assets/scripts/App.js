@@ -120,7 +120,7 @@ buttonsArray.forEach(button => {
 		}
 
 		if(window.location.pathname == "/msa-bogo"){
-			discountCode = 'MSABOGO'
+			discountCode = 'MSABOGO3'
 
 		}
 

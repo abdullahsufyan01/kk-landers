@@ -124,6 +124,16 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/bf-bogo"){
+			discountCode = 'BFBOGO'
+
+		}
+
+		if(window.location.pathname == "/cm-bogo"){
+			discountCode = 'CMBOGO'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

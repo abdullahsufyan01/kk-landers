@@ -221,11 +221,17 @@ ul {
 .navSubBtn {
 	color: white;
 	border-radius: 5px;
-	padding: 0.8em 0.5em;
+	padding: 0.5em 0.3em; 
 	text-align: center;
     text-decoration: none;
     margin-right: -.5em;
+    margin-left: 0.4em;
 	@mixin atLarge {
 		display: none;
 	}
+
+    @mixin atSmaller {
+        margin-left: 0; 
+        padding: 0.8em 0.5em;
+    }
 }

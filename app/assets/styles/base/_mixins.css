@@ -17,3 +17,9 @@
         @mixin-content; 
     }
 }
+
+@define-mixin atSmaller {
+    @media (min-width: 400px){
+        @mixin-content; 
+    }
+}

@@ -1,310 +1,238 @@
-
-
 .btn {
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    color: white;
-    text-decoration: none;
-    font-size: 1.375rem; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    width: 100%;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    font-family: 'Asap Condensed',Helvetica,Arial,Lucida,sans-serif;
-    font-weight:700;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 44px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-family: "Asap Condensed", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 44px;
+  margin: 0 auto;
 
- 
+  @mixin atLarge {
+    width: 100%;
+  }
+
+  &--purple {
+    background-color: $mainPurple;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+  }
+
+  &--orange {
+    background-color: $mainOrange;
+  }
+
+  &--xmasRed {
+    background-color: $xmasRed;
+  }
+
+  &--cursor {
+    cursor: pointer;
+  }
+
+  &--large {
+    @mixin atLarge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.875rem;
+      margin-right: 0px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &--marginTop {
+    margin-top: 15px;
+    @mixin atLarge {
+      margin-top: 20px;
+    }
+  }
+
+  &--showAtFull {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+
+  &--hideAtLarge {
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &--left {
+    @mixin atLarge {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 0;
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  &__padding-bottom {
+    padding-bottom: 25px;
+  }
+
+  &--rightArrow {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
 
     @mixin atLarge {
-        width: 100%;
-        
+      height: 25px;
+      width: 25px;
     }
+  }
 
-    &--purple {
-        background-color: $mainPurple;
+  &--rightArrow:after {
+    content: "";
+    display: flex;
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    @mixin atLarge {
+      width: 10px;
+      height: 10px;
+      margin-top: 7px;
+      margin-left: 4px;
     }
-
-    &--blue {
-        background-color: $mainBlue;
-    }
-
-    &--orange {
-        background-color: $mainOrange;
-    }
-
-    &--cursor {
-        cursor: pointer;
-    }
-
-    
-
-    
-
-    
-
-    &--large {
-        @mixin atLarge {
-            display: flex; 
-            align-items: center;
-            justify-content: center; 
-            font-size: 1.875rem; 
-            margin-right: 0px;
-            padding-top: 12px; 
-            padding-bottom: 12px; 
-        }
-
-       
-    }
-
-    &--marginTop{
-        margin-top: 15px;
-        @mixin atLarge {
-            margin-top: 20px;
-        }
-    }
-
-    &--showAtFull {
-        display: none; 
-        @mixin atLarge {
-            display: block; 
-        }
-
-    }
-
-    &--hideAtLarge {
-        @mixin atLarge {
-            display: none; 
-        }
-    }
-
-
-
-
-    
-    &--left {
-        @mixin atLarge {
-            display: flex; 
-            justify-content: flex-start;
-            align-items: flex-start; 
-            margin-left: 0;
-        }
-    }
-
-    &__wrapper {
-        text-align: center; 
-        margin-bottom: 0px; 
-
-    }
-
-    &__padding-bottom {
-        padding-bottom: 25px; 
-    }
-
-    &--rightArrow {
-        display: inline-block;  
-        height: 18px; 
-        width: 18px; 
-        border: 2px solid white; 
-        border-radius: 50%;
-        margin-left: 10px;   
-
-        @mixin atLarge {
-            height: 25px; 
-            width: 25px;
-
-        }
-     
-        
-        
-      }
-
-    &--rightArrow:after {
-        content: '';
-        display: flex;
-        margin-top: 5px;
-        margin-left: 4px;
-        width: 6px;
-        height: 6px;
-        border-top: 2px solid white;
-        border-right: 2px solid white;
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-
-        @mixin atLarge {
-            width: 10px;
-            height: 10px;
-            margin-top: 7px;
-            margin-left: 4px;
-            
-        }
-
-
-
-
-    }
-
-  
-
-    
-      
-
-
-
-    
-
-} 
-
-
+  }
+}
 
 .btnHalloween {
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    color: white;
-    background-color: $mainPurple;
-    text-decoration: none;
-    font-size: 1.375rem; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    width: 100%;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    font-family: 'Asap Condensed',Helvetica,Arial,Lucida,sans-serif;
-    font-weight:700;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 44px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: $mainPurple;
+  text-decoration: none;
+  font-size: 1.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-family: "Asap Condensed", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 44px;
+  margin: 0 auto;
 
- 
+  @mixin atLarge {
+    width: 100%;
+  }
+
+  &--large {
+    @mixin atLarge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.875rem;
+      margin-right: 0px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &--marginTop {
+    margin-top: 15px;
+    @mixin atLarge {
+      margin-top: 20px;
+    }
+  }
+
+  &--showAtFull {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+
+  &--hideAtLarge {
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &--left {
+    @mixin atLarge {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 0;
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  &__padding-bottom {
+    padding-bottom: 25px;
+  }
+
+  &--rightArrow {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
 
     @mixin atLarge {
-        width: 100%;
-        
+      height: 25px;
+      width: 25px;
     }
+  }
 
-    
+  &--rightArrow:after {
+    content: "";
+    display: flex;
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 
-    
-
-    
-
-    &--large {
-        @mixin atLarge {
-            display: flex; 
-            align-items: center;
-            justify-content: center; 
-            font-size: 1.875rem; 
-            margin-right: 0px;
-            padding-top: 12px; 
-            padding-bottom: 12px; 
-        }
-
-       
+    @mixin atLarge {
+      width: 10px;
+      height: 10px;
+      margin-top: 7px;
+      margin-left: 4px;
     }
-
-    &--marginTop{
-        margin-top: 15px;
-        @mixin atLarge {
-            margin-top: 20px;
-        }
-    }
-
-    &--showAtFull {
-        display: none; 
-        @mixin atLarge {
-            display: block; 
-        }
-
-    }
-
-    &--hideAtLarge {
-        @mixin atLarge {
-            display: none; 
-        }
-    }
-
-
-
-
-    
-    &--left {
-        @mixin atLarge {
-            display: flex; 
-            justify-content: flex-start;
-            align-items: flex-start; 
-            margin-left: 0;
-        }
-    }
-
-    &__wrapper {
-        text-align: center; 
-        margin-bottom: 0px; 
-
-    }
-
-    &__padding-bottom {
-        padding-bottom: 25px; 
-    }
-
-    &--rightArrow {
-        display: inline-block;  
-        height: 18px; 
-        width: 18px; 
-        border: 2px solid white; 
-        border-radius: 50%;
-        margin-left: 10px;   
-
-        @mixin atLarge {
-            height: 25px; 
-            width: 25px;
-
-        }
-     
-        
-        
-      }
-
-    &--rightArrow:after {
-        content: '';
-        display: flex;
-        margin-top: 5px;
-        margin-left: 4px;
-        width: 6px;
-        height: 6px;
-        border-top: 2px solid white;
-        border-right: 2px solid white;
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-
-        @mixin atLarge {
-            width: 10px;
-            height: 10px;
-            margin-top: 7px;
-            margin-left: 4px;
-            
-        }
-
-
-
-
-    }
-
-  
-
-    
-      
-
-
-
-    
-
-} 
+  }
+}

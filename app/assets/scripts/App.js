@@ -134,6 +134,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/merry-bogo"){
+			discountCode = 'MERRY-BOGO'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

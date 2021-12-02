@@ -59,3 +59,15 @@
   to = "https://join.ketokrate.com/25-off"
   status = 302
   force = true
+
+  [[redirects]]
+  from = "/bf-bogo"
+  to = "https://join.ketokrate.com/merry-bogo"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "cm-bogo"
+  to = "https://join.ketokrate.com/merry-bogo"
+  status = 302
+  force = true

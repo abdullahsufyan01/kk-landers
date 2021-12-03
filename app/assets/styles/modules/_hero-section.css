@@ -100,6 +100,24 @@
     font-weight: normal;
     text-align: center;
     color: $mainOrange;
+    font-size: 1.44rem;
+    padding-top: 0px;
+
+    margin: auto;
+
+    @mixin atLarge {
+      font-size: 1.44rem;
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+  }
+
+  &__titleCondensed {
+    font-family: "bree_serifregular", Georgia, "Times New Roman", serif;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    color: $mainOrange;
     font-size: 1rem;
     padding-top: 0px;
 

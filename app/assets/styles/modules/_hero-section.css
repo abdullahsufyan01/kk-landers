@@ -212,6 +212,17 @@
     }
   }
 
+  &__priceNY {
+    text-transform: uppercase;
+    color: #F5911c;
+
+    @mixin atLarge {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1.4rem;
+    }
+  }
+
   &__priceNoUpper {
     @mixin atLarge {
       margin-top: 0;

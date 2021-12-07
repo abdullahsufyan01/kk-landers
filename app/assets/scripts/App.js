@@ -139,6 +139,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/newyear-bogo"){
+			discountCode = 'NYBOGO'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

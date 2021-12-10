@@ -71,3 +71,9 @@
   to = "https://join.ketokrate.com/merry-bogo"
   status = 302
   force = true
+
+  [[redirects]]
+  from = "merry-bogo"
+  to = "https://join.ketokrate.com/newyear-bogo"
+  status = 302
+  force = true

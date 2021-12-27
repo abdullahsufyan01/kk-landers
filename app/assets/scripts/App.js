@@ -144,6 +144,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/ketogenicplus"){
+			discountCode = 'KETOGENICPLUS'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

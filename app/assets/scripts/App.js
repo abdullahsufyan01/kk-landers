@@ -149,6 +149,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/newyear"){
+			discountCode = 'NEWYEAR'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

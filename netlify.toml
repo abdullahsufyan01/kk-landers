@@ -91,3 +91,10 @@
   to = "https://join.ketokrate.com/newyear"
   status = 302
   force = true
+
+
+  [[redirects]]
+  from = "msa-bogo"
+  to = "https://join.ketokrate.com/newyear"
+  status = 302
+  force = true

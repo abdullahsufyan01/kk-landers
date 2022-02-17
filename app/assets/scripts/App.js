@@ -159,6 +159,16 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/25plus"){
+			discountCode = '25plus'
+
+		}
+
+		if(window.location.pathname == "/ketoguide"){
+			discountCode = 'ketoguide'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

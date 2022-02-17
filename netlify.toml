@@ -95,6 +95,18 @@
 
   [[redirects]]
   from = "msa-bogo"
-  to = "https://join.ketokrate.com/newyear"
+  to = "https://join.ketokrate.com/bogoplus"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "newyear"
+  to = "https://join.ketokrate.com/bogoplus"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "newyear-bogo"
+  to = "https://join.ketokrate.com/bogoplus"
   status = 302
   force = true

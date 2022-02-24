@@ -56,7 +56,7 @@
 
 [[redirects]]
   from = "/2krazyketos/"
-  to = "https://join.ketokrate.com/25-off"
+  to = "https://join.ketokrate.com/25plus"
   status = 302
   force = true
 
@@ -78,21 +78,6 @@
   status = 302
   force = true
 
-
-  [[redirects]]
-  from = "25-off"
-  to = "https://join.ketokrate.com/newyear"
-  status = 302
-  force = true
-
-
-  [[redirects]]
-  from = "stay-25"
-  to = "https://join.ketokrate.com/newyear"
-  status = 302
-  force = true
-
-
   [[redirects]]
   from = "msa-bogo"
   to = "https://join.ketokrate.com/bogoplus"
@@ -108,5 +93,23 @@
   [[redirects]]
   from = "newyear-bogo"
   to = "https://join.ketokrate.com/bogoplus"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "bogoplus"
+  to = "https://join.ketokrate.com/ketoguide"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "stay-25"
+  to = "https://join.ketokrate.com/ketoguide"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "25-off"
+  to = "https://join.ketokrate.com/ketoguide"
   status = 302
   force = true

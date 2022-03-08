@@ -113,3 +113,10 @@
   to = "https://join.ketokrate.com/ketoguide"
   status = 302
   force = true
+
+
+  [[redirects]]
+  from = "curlygirlz"
+  to = "https://join.ketokrate.com"
+  status = 302
+  force = true

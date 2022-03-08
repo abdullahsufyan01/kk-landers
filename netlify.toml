@@ -114,8 +114,3 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "/*"
-  to = "https://join.ketokrate.com"
-  status = 404
-  force = true

@@ -114,9 +114,14 @@
   status = 302
   force = true
 
-
   [[redirects]]
   from = "curlygirlz"
   to = "https://join.ketokrate.com"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "fabfitfun"
+  to = "https://join.ketokrate.com/fabfitfun"
   status = 302
   force = true

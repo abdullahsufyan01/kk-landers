@@ -169,6 +169,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/fabfitfun"){
+			discountCode = 'fabfitfun'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

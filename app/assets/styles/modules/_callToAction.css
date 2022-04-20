@@ -15,3 +15,12 @@
 
     }
 }
+
+.secondary-timer-larger {
+    display: none;
+    
+    @mixin atLarge {
+        display: visible; 
+
+    }
+}

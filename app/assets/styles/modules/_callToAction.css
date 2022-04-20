@@ -8,3 +8,10 @@
         
     }
 }
+
+.secondary-timer {
+    @mixin atLarge {
+        display: none; 
+
+    }
+}

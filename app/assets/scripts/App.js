@@ -174,6 +174,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/lowcarbyum"){
+			discountCode = 'LOWCARBYUM40'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

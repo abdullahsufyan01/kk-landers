@@ -212,6 +212,11 @@
     }
   }
 
+  &__priceStrike {
+    text-decoration-line: line-through;
+    color: #8d8b8b8e;
+  }
+
   &__priceNY {
     text-transform: uppercase;
     color: #F5911c;

@@ -98,25 +98,31 @@
 
   [[redirects]]
   from = "bogoplus"
-  to = "https://join.ketokrate.com/ketoguide"
+  to = "https://join.ketokrate.com/25plus"
   status = 302
   force = true
 
   [[redirects]]
   from = "stay-25"
-  to = "https://join.ketokrate.com/ketoguide"
+  to = "https://join.ketokrate.com/25plus"
   status = 302
   force = true
 
   [[redirects]]
   from = "25-off"
-  to = "https://join.ketokrate.com/ketoguide"
+  to = "https://join.ketokrate.com/25plus"
   status = 302
   force = true
 
   [[redirects]]
   from = "curlygirlz"
   to = "https://join.ketokrate.com"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "ketoguide"
+  to = "https://join.ketokrate.com/25plus"
   status = 302
   force = true
 

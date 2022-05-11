@@ -179,6 +179,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/memorialday"){
+			discountCode = 'MEMORIALDAY'
+
+		}
+
 		getReChargeCheckout({discountCode})
 	})
 })

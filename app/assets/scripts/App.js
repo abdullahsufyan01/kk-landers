@@ -169,6 +169,11 @@ buttonsArray.forEach(button => {
 
 		}
 
+		if(window.location.pathname == "/kkguide"){
+			discountCode = 'ketoguide'
+
+		}
+
 		if(window.location.pathname == "/fabfitfun"){
 			discountCode = 'fabfitfun'
 
@@ -181,6 +186,11 @@ buttonsArray.forEach(button => {
 
 		if(window.location.pathname == "/memorialday"){
 			discountCode = 'MEMORIALDAY'
+
+		}
+
+		if(window.location.pathname == "/summer"){
+			discountCode = 'FIRST30OFF'
 
 		}
 

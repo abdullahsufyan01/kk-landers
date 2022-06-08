@@ -126,3 +126,9 @@
   status = 302
   force = true
 
+  [[redirects]]
+  from = "memorialday"
+  to = "https://join.ketokrate.com/summer"
+  status = 302
+  force = true
+

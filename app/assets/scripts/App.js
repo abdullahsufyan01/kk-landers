@@ -155,7 +155,7 @@ buttonsArray.forEach(button => {
 		}
 
 		if(window.location.pathname == "/bogoplus"){
-			discountCode = 'BOGOPLUS'
+			discountCode = 'FALLBOGO'
 
 		}
 

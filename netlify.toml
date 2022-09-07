@@ -97,12 +97,6 @@
   force = true
 
   [[redirects]]
-  from = "bogoplus"
-  to = "https://join.ketokrate.com/25plus"
-  status = 302
-  force = true
-
-  [[redirects]]
   from = "stay-25"
   to = "https://join.ketokrate.com/25plus"
   status = 302

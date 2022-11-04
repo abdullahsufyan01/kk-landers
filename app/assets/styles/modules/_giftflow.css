@@ -1,0 +1,196 @@
+.gift-flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.gift-option {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  height: 110px; 
+  cursor: pointer; 
+}
+
+.gift-option:hover {
+  background-color: $mainOrangeHover;
+}
+
+.gift-option:hover .gift-best {
+  background-color: $mainOrangeHover;
+}
+
+.gift-option-selected, .gift-option-selected .gift-best {
+  background-color: $mainOrangeHover;
+}
+
+.gift-totalPrice {
+  color: #231341;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 2.2rem;
+  font-family: "open_sansregular",Arial,sans-serif;
+  text-align: right;
+  margin: 15px 10px 15px 0;
+
+  &--discount {
+    text-decoration: line-through;
+    color: $mainOrange;
+    font-family: "bree_serifregular", Georgia, "Times New Roman", serif;
+
+  }
+  
+}
+
+.gift-cancel {
+  text-align: right; 
+  padding: 15px 10px 15px 0; 
+  color: grey;
+}
+
+
+
+.gift-month-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  justify-content: center;
+  text-align: center;
+}
+
+.gift-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-width: 200px;
+}
+
+.gift-best {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-family: "open_sansregular", Arial, sans-serif;
+  padding: 5px; 
+  background-color: $mainOrange;
+  color: white; 
+  border-radius: 0 9px 9px 0; 
+  line-height: 12px;
+  min-width: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  
+
+  &--none {
+    background-color: #fff;
+  }
+
+}
+
+.gift-divide-container {
+  display: flex;
+  align-items: center;
+}
+
+.gift-divide {
+  border-left: 1px solid black;
+  height: 75px;
+
+}
+
+.gift-length {
+  font-size: 1.5rem;
+  font-family: "open_sansregular", Arial, sans-serif;
+}
+
+.gift-name {
+  font-family: "open_sansregular", Arial, sans-serif;
+}
+
+
+.slider-gift {
+  display: flex; 
+  width: 50%;
+  justify-content: space-around;
+  /* overflow: hidden; */
+}
+
+.slide-gift {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+
+}
+
+.slide-gift img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-gift {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn-gift:active {
+  transform: scale(1.1);
+}
+
+.btn-gift-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-gift-next {
+  top: 45%;
+  right: 2%;
+}
+
+.carousel-wrapper-gift {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.carousel-gift {
+  width: 45vw;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* use this property to hide the scrollbar on firefox */
+  scrollbar-width: none;
+}
+/*  use this pseudo class to hide the scrollbar on chrome */
+.carousel-gift::-webkit-scrollbar {
+  display: none;
+}
+.item-gift {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+.left-gift,
+.right-gift {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: brown;
+  font-size: 5rem;
+  overflow: hidden;
+  z-index: 100;
+}
+.item-gift img {
+  width: 100%;
+
+}

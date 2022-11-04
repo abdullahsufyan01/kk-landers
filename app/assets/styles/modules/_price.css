@@ -29,3 +29,24 @@
     }
    
 }
+
+.price-gift {
+    color: #231341;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.2rem;
+    font-family: "open_sansregular",Arial,sans-serif;
+    text-align: center;
+    margin-top: 0; 
+
+    &--savings {
+        font-family: "bree_serifregular", Georgia, "Times New Roman", serif;
+        text-align: center;
+        color: $mainOrange;
+
+
+    }
+    &--per {
+        font-size: 1rem;
+    }
+}

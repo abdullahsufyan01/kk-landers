@@ -261,7 +261,7 @@ function getReChargeCheckout(data = {}) {
   document.getElementsByClassName("container")[0].style.display = "flex";
   document.getElementsByClassName("loader2")[0].style.display = "flex";
 
-  fetch("http://localhost:80/reChargeCheckout", {
+  fetch("https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

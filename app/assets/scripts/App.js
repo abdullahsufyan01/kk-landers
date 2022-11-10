@@ -152,6 +152,7 @@ var buttonsArray = Array.from(document.querySelectorAll(".btnredirect"));
 
 buttonsArray.forEach((button) => {
   button.addEventListener("click", function () {
+    console.log('is working')
     var discountCode = "";
     window.dataLayer = window.dataLayer || [];
 

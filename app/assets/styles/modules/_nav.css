@@ -235,3 +235,24 @@ ul {
         padding: 0.8em 0.5em;
     }
 }
+
+.navGiftPage {
+    display: flex;
+    background-color: white;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid white !important; 
+    align-items: center;
+    z-index: 2;
+    padding: .5rem 1.5rem;
+    
+    @mixin atLarge {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+#headerGiftPage {
+    border-bottom: 1px solid white !important; 
+
+}

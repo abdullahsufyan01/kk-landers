@@ -24,7 +24,7 @@ var giftOptions = document.querySelectorAll(".gift-option");
 var giftPrice = 45.99;
 var total = 137.97;
 var originalTotal = 149.97
-var frequency = 'Quarterly'
+var frequency = '3'
 
 console.log(giftOptions);
 
@@ -44,15 +44,15 @@ giftOptions.forEach((node) =>
     if (giftPrice === 39.99) {
       total = giftPrice * 12;
 			originalTotal = 599.88;
-			frequency = 'Annually';
+			frequency = '12';
     } else if (giftPrice === 43.99) {
       total = giftPrice * 6;
 			originalTotal = 299.94
-			frequency = 'Bi-Annually';
+			frequency = '6';
     } else if (giftPrice === 45.99) {
       total = giftPrice * 3;
 			originalTotal = 149.97
-			frequency = 'Quarterly';
+			frequency = '3';
     } else {
       total = 49.99;
 			originalTotal = 0
@@ -63,7 +63,7 @@ giftOptions.forEach((node) =>
 			Total: ${total.toFixed(2)}
 		`;
 			document.querySelector(".gift-cancel").innerHTML = `
-			Billed Monthly.  Cancel Anytime!
+			Billed Once for 1 month of KetoKrate!
 			`
 
 
@@ -73,7 +73,7 @@ giftOptions.forEach((node) =>
 			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(2)} </span> ${total.toFixed(2)}
 		`;
 			document.querySelector(".gift-cancel").innerHTML = `
-			Billed ${frequency}.  Cancel Anytime!
+      Billed once. You gift recipient will receive ${frequency} Krates over ${frequency} months!
 			`
 		}
 

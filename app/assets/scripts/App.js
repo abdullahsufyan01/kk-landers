@@ -1,6 +1,4 @@
-
 import "../../assets/fonts/stylesheet.css";
-
 
 import "../styles/styles.css";
 import "lazysizes";
@@ -12,137 +10,133 @@ import {
   slideIndex,
 } from "./modules/PastKrates.js";
 
-import "./carousel"
+import "./carousel";
 
 if (module.hot) {
   module.hot.accept();
 }
 
+if (window.location.pathname == "/gift-flow") {
+  var giftOptions = document.querySelectorAll(".gift-option");
 
-var giftOptions = document.querySelectorAll(".gift-option");
+  var giftPrice = 45.99;
+  var total = 137.97;
+  var originalTotal = 149.97;
+  var frequency = "3";
 
-var giftPrice = 45.99;
-var total = 137.97;
-var originalTotal = 149.97
-var frequency = '3'
+  console.log(giftOptions);
 
-console.log(giftOptions);
+  giftOptions.forEach((node) =>
+    node.addEventListener("click", (e) => {
+      var nodesWithHover = document.querySelectorAll(".gift-option-selected");
+      if (nodesWithHover.length !== 0) {
+        nodesWithHover.forEach((node) =>
+          node.classList.remove("gift-option-selected")
+        );
+      }
+      e.target.closest(".gift-option").classList.add("gift-option-selected");
+      // e.target.closest.classList.add('gift-option-selected')
+      giftPrice = e.target.closest(".gift-option").dataset.price;
+      giftPrice = parseFloat(giftPrice);
+      console.log(typeof giftPrice);
+      if (giftPrice === 39.99) {
+        total = giftPrice * 12;
+        originalTotal = 599.88;
+        frequency = "12";
+      } else if (giftPrice === 43.99) {
+        total = giftPrice * 6;
+        originalTotal = 299.94;
+        frequency = "6";
+      } else if (giftPrice === 45.99) {
+        total = giftPrice * 3;
+        originalTotal = 149.97;
+        frequency = "3";
+      } else {
+        total = 49.99;
+        originalTotal = 0;
+      }
 
-giftOptions.forEach((node) =>
-  node.addEventListener("click", (e) => {
-    var nodesWithHover = document.querySelectorAll(".gift-option-selected");
-    if (nodesWithHover.length !== 0) {
-      nodesWithHover.forEach((node) =>
-        node.classList.remove("gift-option-selected")
-      );
-    }
-    e.target.closest(".gift-option").classList.add("gift-option-selected");
-    // e.target.closest.classList.add('gift-option-selected')
-    giftPrice = e.target.closest(".gift-option").dataset.price;
-    giftPrice = parseFloat(giftPrice);
-    console.log(typeof giftPrice);
-    if (giftPrice === 39.99) {
-      total = giftPrice * 12;
-			originalTotal = 599.88;
-			frequency = '12';
-    } else if (giftPrice === 43.99) {
-      total = giftPrice * 6;
-			originalTotal = 299.94
-			frequency = '6';
-    } else if (giftPrice === 45.99) {
-      total = giftPrice * 3;
-			originalTotal = 149.97
-			frequency = '3';
-    } else {
-      total = 49.99;
-			originalTotal = 0
-    }
-
-		if (originalTotal === 0){
-			document.querySelector(".gift-totalPrice").innerHTML = `
+      if (originalTotal === 0) {
+        document.querySelector(".gift-totalPrice").innerHTML = `
 			Total: ${total.toFixed(2)}
 		`;
-			document.querySelector(".gift-cancel").innerHTML = `
+        document.querySelector(".gift-cancel").innerHTML = `
 			Billed Once for 1 month of KetoKrate!
-			`
-
-
-
-		} else {
-			document.querySelector(".gift-totalPrice").innerHTML = `
-			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(2)} </span> ${total.toFixed(2)}
+			`;
+      } else {
+        document.querySelector(".gift-totalPrice").innerHTML = `
+			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(
+        2
+      )} </span> ${total.toFixed(2)}
 		`;
-			document.querySelector(".gift-cancel").innerHTML = `
+        document.querySelector(".gift-cancel").innerHTML = `
       Your giftee will receive ${frequency} Krates over ${frequency} months!
-			`
-		}
-
-
-  })
-);
-
-
-
-//Building FAQ dropdown
-
-var faqList = Array.from(document.querySelectorAll(".FAQ"));
-
-faqList.forEach((faq) => {
-  faq.addEventListener(
-    "click",
-    function (event) {
-      // Prevent default link behavior
-      event.preventDefault();
-			console.log('clicked')
-      // Get the content
-      var content = this.children[1];
-      if (!content) return;
-      // Toggle the content
-      toggle(content);
-    },
-    false
+			`;
+      }
+    })
   );
-});
+} else {
+  //Building FAQ dropdown
 
-//Getting pastkrates animation to work
+  var faqList = Array.from(document.querySelectorAll(".FAQ"));
 
-showSlides(slideIndex);
+  faqList.forEach((faq) => {
+    faq.addEventListener(
+      "click",
+      function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+        console.log("clicked");
+        // Get the content
+        var content = this.children[1];
+        if (!content) return;
+        // Toggle the content
+        toggle(content);
+      },
+      false
+    );
+  });
 
-var prev = document.querySelector(".pastKrates__prev");
-prev.addEventListener("click", plusSlidesMinus);
+  //Getting pastkrates animation to work
 
-var prev = document.querySelector(".pastKrates__next");
-prev.addEventListener("click", plusSlidesPlus);
+  showSlides(slideIndex);
 
-// Nav bar stuff
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navOverlay = document.querySelector(".nav-overlay");
+  var prev = document.querySelector(".pastKrates__prev");
+  prev.addEventListener("click", plusSlidesMinus);
 
-// so we don't error on other pages
-if (hamburger) {
-  hamburger.addEventListener("click", mobileMenu);
-}
+  var prev = document.querySelector(".pastKrates__next");
+  prev.addEventListener("click", plusSlidesPlus);
 
-// opens the mobile menu and activates overlay
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-  navOverlay.classList.toggle("active");
-}
+  // Nav bar stuff
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const navOverlay = document.querySelector(".nav-overlay");
 
-const navLink = document.querySelectorAll(".nav-link");
+  // so we don't error on other pages
+  if (hamburger) {
+    hamburger.addEventListener("click", mobileMenu);
+  }
 
-// so we don't error on other pages
-if (navLink) {
-  navLink.forEach((n) => n.addEventListener("click", closeMenu));
-}
+  // opens the mobile menu and activates overlay
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    navOverlay.classList.toggle("active");
+  }
 
-// closes the mobile menu and deactivates overlay
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-  navOverlay.classList.remove("active");
+  const navLink = document.querySelectorAll(".nav-link");
+
+  // so we don't error on other pages
+  if (navLink) {
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+  }
+
+  // closes the mobile menu and deactivates overlay
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    navOverlay.classList.remove("active");
+  }
 }
 
 // var homebtn = document.querySelector('.btntest');
@@ -152,7 +146,7 @@ var buttonsArray = Array.from(document.querySelectorAll(".btnredirect"));
 
 buttonsArray.forEach((button) => {
   button.addEventListener("click", function () {
-    console.log('is working')
+    console.log("is working");
     var discountCode = "";
     window.dataLayer = window.dataLayer || [];
 
@@ -241,22 +235,21 @@ buttonsArray.forEach((button) => {
     if (window.location.pathname == "/summer") {
       discountCode = "FIRST30OFF";
     }
-		if (window.location.pathname == "/gift-flow"){
-			discountCode = "GIFT**&"
-		}
+    if (window.location.pathname == "/gift-flow") {
+      discountCode = "GIFT**&";
+    }
 
     getReChargeCheckout({ discountCode });
   });
 });
 
 function getReChargeCheckout(data = {}) {
-
-	if (data.discountCode === "GIFT**&"){
-		data = {
-			discountCode: 'GIFT**&',
-			price: total
-		}
-	}
+  if (data.discountCode === "GIFT**&") {
+    data = {
+      discountCode: "GIFT**&",
+      price: total,
+    };
+  }
 
   document.getElementsByClassName("overlay")[0].style.display = "flex";
   document.getElementsByClassName("container")[0].style.display = "flex";
@@ -268,7 +261,6 @@ function getReChargeCheckout(data = {}) {
     cache: "no-cache",
     headers: {
       "Content-Type": "application/json",
-
     },
     body: JSON.stringify(data),
   })

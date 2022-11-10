@@ -1,4 +1,6 @@
+
 import "../../assets/fonts/stylesheet.css";
+
 
 import "../styles/styles.css";
 import "lazysizes";
@@ -9,6 +11,8 @@ import {
   plusSlidesPlus,
   slideIndex,
 } from "./modules/PastKrates.js";
+
+import "./carousel"
 
 if (module.hot) {
   module.hot.accept();
@@ -65,6 +69,36 @@ if (module.hot) {
 
 
 
+<<<<<<< HEAD
+		} else {
+			document.querySelector(".gift-totalPrice").innerHTML = `
+			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(2)} </span> ${total.toFixed(2)}
+		`;
+			document.querySelector(".gift-cancel").innerHTML = `
+			Billed ${frequency}.  Cancel Anytime!
+			`
+		}
+
+  
+  })
+);
+
+//Other carousel using flexbox
+// let carousel = document.querySelector(".carousel-gift");
+// let left = document.querySelector(".left-gift");
+// let right = document.querySelector(".right-gift");
+// let item = document.querySelector(".item-gift");
+
+// right.addEventListener("click", function (e) {
+//   console.log("hey");
+//   carousel.scrollLeft += item.clientWidth;
+// });
+// left.addEventListener("click", function () {
+//   console.log("hey");
+//   carousel.scrollLeft -= item.clientWidth;
+// });
+=======
+>>>>>>> 7012989c3472318e737d0e235f8a5691c8766b53
 
 //Building FAQ dropdown
 
@@ -76,6 +110,7 @@ faqList.forEach((faq) => {
     function (event) {
       // Prevent default link behavior
       event.preventDefault();
+			console.log('clicked')
       // Get the content
       var content = this.children[1];
       if (!content) return;
@@ -222,25 +257,34 @@ buttonsArray.forEach((button) => {
     if (window.location.pathname == "/summer") {
       discountCode = "FIRST30OFF";
     }
+		if (window.location.pathname == "/gift-flow"){
+			discountCode = "GIFT**&"
+		}
 
     getReChargeCheckout({ discountCode });
   });
 });
 
 function getReChargeCheckout(data = {}) {
-  console.log("hey");
-  console.log(data);
+
+	if (data.discountCode === "GIFT**&"){
+		data = {
+			discountCode: 'GIFT**&',
+			price: total
+		}
+	}
 
   document.getElementsByClassName("overlay")[0].style.display = "flex";
   document.getElementsByClassName("container")[0].style.display = "flex";
   document.getElementsByClassName("loader2")[0].style.display = "flex";
 
-  fetch("https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout", {
+  fetch("http://localhost:80/reChargeCheckout", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
     headers: {
       "Content-Type": "application/json",
+
     },
     body: JSON.stringify(data),
   })

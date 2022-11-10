@@ -3,6 +3,7 @@
 @import 'base/_variables.css';
 @import 'base/_global.css';
 @import 'modules/_nav.css';
+@import 'modules/_carousel.css';
 @import 'modules/_wrapper.css';
 @import 'modules/_hero-section.css';
 @import 'modules/_hero-section-nav.css';
@@ -24,6 +25,7 @@
 @import 'modules/_countdown.css';
 @import 'modules/_loading.css';
 @import 'modules/_giftflow.css';
+
 
 
 

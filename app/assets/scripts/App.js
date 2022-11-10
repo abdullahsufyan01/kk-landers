@@ -73,7 +73,7 @@ giftOptions.forEach((node) =>
 			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(2)} </span> ${total.toFixed(2)}
 		`;
 			document.querySelector(".gift-cancel").innerHTML = `
-      Billed once. You gift recipient will receive ${frequency} Krates over ${frequency} months!
+      Your giftee will receive ${frequency} Krates over ${frequency} months!
 			`
 		}
 

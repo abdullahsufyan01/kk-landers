@@ -18,58 +18,56 @@ if (module.hot) {
   module.hot.accept();
 }
 
-// //Building Gift Slider
-// const slides = document.querySelectorAll(".slide-gift");
-// slides.forEach((slide, indx) => {
-//   slide.style.transform = `translate(${indx * 100}%)`;
-// });
 
-// // current slide counter
-// let curSlide = 0;
+var giftOptions = document.querySelectorAll(".gift-option");
 
-// // maximum number of slides
-// let maxSlide = slides.length - 1;
+var giftPrice = 45.99;
+var total = 137.97;
+var originalTotal = 149.97
+var frequency = 'Quarterly'
 
-// // select next slide button
-// const nextSlide = document.querySelector(".btn-gift-next");
+console.log(giftOptions);
 
-// // add event listener and navigation functionality
-// nextSlide.addEventListener("click", function () {
-//   // check if current slide is the last and reset current slide
-//   if (curSlide === maxSlide) {
-//     curSlide = 0;
-//   } else {
-//     curSlide++;
-//   }
+giftOptions.forEach((node) =>
+  node.addEventListener("click", (e) => {
+    var nodesWithHover = document.querySelectorAll(".gift-option-selected");
+    if (nodesWithHover.length !== 0) {
+      nodesWithHover.forEach((node) =>
+        node.classList.remove("gift-option-selected")
+      );
+    }
+    e.target.closest(".gift-option").classList.add("gift-option-selected");
+    // e.target.closest.classList.add('gift-option-selected')
+    giftPrice = e.target.closest(".gift-option").dataset.price;
+    giftPrice = parseFloat(giftPrice);
+    console.log(typeof giftPrice);
+    if (giftPrice === 39.99) {
+      total = giftPrice * 12;
+			originalTotal = 599.88;
+			frequency = 'Annually';
+    } else if (giftPrice === 43.99) {
+      total = giftPrice * 6;
+			originalTotal = 299.94
+			frequency = 'Bi-Annually';
+    } else if (giftPrice === 45.99) {
+      total = giftPrice * 3;
+			originalTotal = 149.97
+			frequency = 'Quarterly';
+    } else {
+      total = 49.99;
+			originalTotal = 0
+    }
 
-//   //   move slide by -100%
-//   slides.forEach((slide, indx) => {
-//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-//   });
-// });
-
-// // select prev slide button
-// const prevSlide = document.querySelector(".btn-gift-prev");
-
-// // add event listener and navigation functionality
-// prevSlide.addEventListener("click", function () {
-//   // check if current slide is the first and reset current slide to last
-//   if (curSlide === 0) {
-//     curSlide = maxSlide;
-//   } else {
-//     curSlide--;
-//   }
-
-//   //   move slide by 100%
-//   slides.forEach((slide, indx) => {
-//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-//   });
-// });
-
-
+		if (originalTotal === 0){
+			document.querySelector(".gift-totalPrice").innerHTML = `
+			Total: ${total.toFixed(2)}
+		`;
+			document.querySelector(".gift-cancel").innerHTML = `
+			Billed Monthly.  Cancel Anytime!
+			`
 
 
-<<<<<<< HEAD
+
 		} else {
 			document.querySelector(".gift-totalPrice").innerHTML = `
 			Total: <span class="gift-totalPrice--discount">${originalTotal.toFixed(2)} </span> ${total.toFixed(2)}
@@ -79,26 +77,11 @@ if (module.hot) {
 			`
 		}
 
-  
+
   })
 );
 
-//Other carousel using flexbox
-// let carousel = document.querySelector(".carousel-gift");
-// let left = document.querySelector(".left-gift");
-// let right = document.querySelector(".right-gift");
-// let item = document.querySelector(".item-gift");
 
-// right.addEventListener("click", function (e) {
-//   console.log("hey");
-//   carousel.scrollLeft += item.clientWidth;
-// });
-// left.addEventListener("click", function () {
-//   console.log("hey");
-//   carousel.scrollLeft -= item.clientWidth;
-// });
-=======
->>>>>>> 7012989c3472318e737d0e235f8a5691c8766b53
 
 //Building FAQ dropdown
 

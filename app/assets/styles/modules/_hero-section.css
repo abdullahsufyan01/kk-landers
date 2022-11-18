@@ -173,13 +173,14 @@
   &__perkItem {
     background: url("assets/images/checkmark.jpg") no-repeat left top;
     font-family: "open_sansregular", Arial, sans-serif;
-    background-size: 20px 20px;
+    background-size: 12px 12px;
     color: #000000;
     background-position-y: 10px;
     padding-left: 24px;
     padding-right: 20px;
-    line-height: 2.4em;
+    line-height: 1.4em;
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   &__perkItem-subscribe {

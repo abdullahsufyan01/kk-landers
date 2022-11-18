@@ -239,6 +239,10 @@ buttonsArray.forEach((button) => {
       discountCode = "GIFT**&";
     }
 
+    if (window.location.pathname == "/blackfriday") {
+      discountCode = "BLKFRIYAY";
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

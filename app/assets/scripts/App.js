@@ -79,7 +79,7 @@ if (window.location.pathname == "/gift-flow") {
   giftButton.addEventListener("click", function(){
     console.log('in the gift click')
     sessionStorage.setItem("gift-price", total)
-    window.location.href = "/gift-message.html"
+    window.location.href = "/gift-message"
   })  
 } else if (window.location.pathname == "/gift-message")  {
   /******* CHECKING IF ON GIFT MESSAGE PAGE *******/

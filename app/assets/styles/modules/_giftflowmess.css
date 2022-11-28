@@ -22,7 +22,7 @@
   left: 0px;
 
   /* Specify the background image to be used */
-  background-color: $mainOrange;
+  background-color: white;
   background-image: url("../../../assets/images/gift-flow.jpg");
   background-repeat: no-repeat;
   background-size: cover;

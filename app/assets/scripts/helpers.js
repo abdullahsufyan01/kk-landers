@@ -1,8 +1,9 @@
 export function getReChargeCheckout(data = {}) {
   if (data.discountCode === "GIFT**&") {
+    var message_combined = `From: ${data.lastName}\n\n ${data.message}`
     data = {
       discountCode: "GIFT**&",
-      note: data.message,
+      note: message_combined,
       price: data.price,
     };
   }
@@ -15,7 +16,7 @@ export function getReChargeCheckout(data = {}) {
   document.getElementsByClassName("container")[0].style.display = "flex";
   document.getElementsByClassName("loader2")[0].style.display = "flex";
 
-  fetch("http://localhost:80/rechargeCheckout", {
+  fetch("https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

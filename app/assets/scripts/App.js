@@ -243,6 +243,10 @@ buttonsArray.forEach((button) => {
       discountCode = "BLKFRIYAY";
     }
 
+    if (window.location.pathname == "/cybermonday") {
+      discountCode = "CMGT2022";
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

@@ -1,5 +1,4 @@
 import "../../assets/fonts/stylesheet.css";
-
 import "../styles/styles.css";
 import "lazysizes";
 import toggle from "./modules/FAQ.js";
@@ -11,11 +10,15 @@ import {
 } from "./modules/PastKrates.js";
 
 import "./carousel";
+import {getReChargeCheckout} from './helpers.js'
+import { forEach } from "lodash";
 
+/******* ADDING IN SECTION FOR HOT LOADING DURING DEV *******/
 if (module.hot) {
   module.hot.accept();
 }
 
+/******* CHECKING IF ON GIFT HOMEPAGE *******/
 if (window.location.pathname == "/gift-flow") {
   var giftOptions = document.querySelectorAll(".gift-option");
 
@@ -23,8 +26,6 @@ if (window.location.pathname == "/gift-flow") {
   var total = 137.97;
   var originalTotal = 149.97;
   var frequency = "3";
-
-  console.log(giftOptions);
 
   giftOptions.forEach((node) =>
     node.addEventListener("click", (e) => {
@@ -38,7 +39,6 @@ if (window.location.pathname == "/gift-flow") {
       // e.target.closest.classList.add('gift-option-selected')
       giftPrice = e.target.closest(".gift-option").dataset.price;
       giftPrice = parseFloat(giftPrice);
-      console.log(typeof giftPrice);
       if (giftPrice === 39.99) {
         total = giftPrice * 12;
         originalTotal = 599.88;
@@ -75,9 +75,35 @@ if (window.location.pathname == "/gift-flow") {
       }
     })
   );
+  var giftButton = document.querySelector(".btnredirect-message")
+  giftButton.addEventListener("click", function(){
+    console.log('in the gift click')
+    sessionStorage.setItem("gift-price", total)
+    window.location.href = "/gift-message.html"
+  })  
+} else if (window.location.pathname == "/gift-message")  {
+  /******* CHECKING IF ON GIFT MESSAGE PAGE *******/
+  var checkoutbtn = document.querySelectorAll(".gift-checkout-btn")
+  checkoutbtn.forEach(btn => {
+    btn.addEventListener("click", function(){
+      var message = document.querySelector(".gift-message-input").value
+      var firstName = document.querySelector(".giftee-name").value
+      var lastName = document.querySelector(".gifter-name").value
+      var gift_info = {
+        discountCode: "GIFT**&",
+        price: sessionStorage.getItem("gift-price"),
+        message: message,
+        firstName: firstName,
+        lastName: lastName
+      }
+      console.log(gift_info)
+      getReChargeCheckout(gift_info)
+     
+    })
+  })
+  
 } else {
-  //Building FAQ dropdown
-
+  /******* CREATING FAQ *******/
   var faqList = Array.from(document.querySelectorAll(".FAQ"));
 
   faqList.forEach((faq) => {
@@ -96,9 +122,7 @@ if (window.location.pathname == "/gift-flow") {
       false
     );
   });
-
-  //Getting pastkrates animation to work
-
+  /******* CREATING PAST KRATES *******/
   showSlides(slideIndex);
 
   var prev = document.querySelector(".pastKrates__prev");
@@ -137,12 +161,7 @@ if (window.location.pathname == "/gift-flow") {
     navMenu.classList.remove("active");
     navOverlay.classList.remove("active");
   }
-}
-
-// var homebtn = document.querySelector('.btntest');
-// homebtn.addEventListener('click', getReChargeCheckout);
-
-var buttonsArray = Array.from(document.querySelectorAll(".btnredirect"));
+  var buttonsArray = Array.from(document.querySelectorAll(".btnredirect"));
 
 buttonsArray.forEach((button) => {
   button.addEventListener("click", function () {
@@ -251,38 +270,13 @@ buttonsArray.forEach((button) => {
   });
 });
 
-function getReChargeCheckout(data = {}) {
-  if (data.discountCode === "GIFT**&") {
-    data = {
-      discountCode: "GIFT**&",
-      price: total,
-    };
-  }
-
-  document.getElementsByClassName("overlay")[0].style.display = "flex";
-  document.getElementsByClassName("container")[0].style.display = "flex";
-  document.getElementsByClassName("loader2")[0].style.display = "flex";
-
-  fetch("https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout", {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      document.getElementsByClassName("overlay")[0].style.display = "none";
-      document.getElementsByClassName("container")[0].style.display = "none";
-      document.getElementsByClassName("loader2")[0].style.display = "none";
-      const url = `https://checkout.ketokrate.com/r/checkout/${data.token}`;
-      window.location.href = url;
-    });
-
-  //response.json().then(data => console.log('here', data))
 }
+
+
+
+
+
+
 
 // async function getReChargeCheckout () {
 
@@ -329,3 +323,6 @@ function getReChargeCheckout(data = {}) {
 // 		false
 // 	);
 // });
+
+
+

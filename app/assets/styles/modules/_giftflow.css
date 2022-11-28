@@ -30,6 +30,10 @@
   width: 100%;
 }
 
+.gift-message {
+  padding: 20px;
+}
+
 .gift-option {
   display: flex;
   flex-direction: row;

@@ -266,6 +266,10 @@ buttonsArray.forEach((button) => {
       discountCode = "CMGT2022";
     }
 
+    if (window.location.pathname == "/beyond") {
+      discountCode = "KRATEBEYOND";
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

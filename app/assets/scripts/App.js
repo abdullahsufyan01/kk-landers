@@ -270,6 +270,10 @@ buttonsArray.forEach((button) => {
       discountCode = "KRATEBEYOND";
     }
 
+    if (window.location.pathname == "/bundle") {
+      discountCode = "THEKRATEBEYOND";
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

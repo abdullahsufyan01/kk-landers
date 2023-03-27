@@ -126,3 +126,27 @@
   status = 302
   force = true
 
+  [[redirects]]
+  from = "blackfriday"
+  to = "https://join.ketokrate.com/bundle"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "bf-bogo"
+  to = "https://join.ketokrate.com/bundle"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "cm-bogo"
+  to = "https://join.ketokrate.com/bundle"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "cybermonday"
+  to = "https://join.ketokrate.com/bundle"
+  status = 302
+  force = true
+

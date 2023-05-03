@@ -274,6 +274,10 @@ buttonsArray.forEach((button) => {
       discountCode = "THEKRATEBEYOND";
     }
 
+    if (window.location.pathname == "/snackfun") {
+      discountCode = "SNACKFUN";
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

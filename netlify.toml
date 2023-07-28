@@ -150,3 +150,9 @@
   status = 302
   force = true
 
+  [[redirects]]
+  from = "bogoplus"
+  to = "https://join.ketokrate.com/25-off"
+  status = 302
+  force = true
+

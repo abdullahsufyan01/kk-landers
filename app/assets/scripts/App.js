@@ -277,6 +277,9 @@ buttonsArray.forEach((button) => {
     if (window.location.pathname == "/snackfun") {
       discountCode = "SNACKFUN";
     }
+    if (window.location.pathname == "/prepaid"){
+      discountCode = "12monthprepaid"
+    }
 
     getReChargeCheckout({ discountCode });
   });

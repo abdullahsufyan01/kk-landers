@@ -16,7 +16,7 @@ export function getReChargeCheckout(data = {}) {
   document.getElementsByClassName("container")[0].style.display = "flex";
   document.getElementsByClassName("loader2")[0].style.display = "flex";
 
-  fetch("https://hoiland-klaviyo-properties.herokuapp.com/rechargeCheckout", {
+  fetch("https://cryptic-dusk-55032-bb1865d4f858.herokuapp.com/rechargeCheckout", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

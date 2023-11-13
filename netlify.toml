@@ -156,8 +156,20 @@
   status = 302
   force = true
 
-[[redirects]]
+  [[redirects]]
   from = "25plus"
+  to = "https://www.ketokrate.com/pages/prepay-and-save"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "bundle"
+  to = "https://www.ketokrate.com/pages/prepay-and-save"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "snackfun"
   to = "https://www.ketokrate.com/pages/prepay-and-save"
   status = 302
   force = true

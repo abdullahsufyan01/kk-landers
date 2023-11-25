@@ -281,6 +281,10 @@ buttonsArray.forEach((button) => {
       discountCode = "12monthprepaid"
     }
 
+    if (window.location.pathname == "/cybermonday"){
+      discountCode = "1monthprepaid"
+    }
+
     getReChargeCheckout({ discountCode });
   });
 });

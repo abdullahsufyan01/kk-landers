@@ -125,3 +125,27 @@
   to = "https://join.ketokrate.com/summer"
   status = 302
   force = true
+
+  [[redirects]]
+  from = "bundle"
+  to = "https://join.ketokrate.com/cybermonday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "snackfun"
+  to = "https://join.ketokrate.com/cybermonday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "25plus"
+  to = "https://join.ketokrate.com/cybermonday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "blackfriday"
+  to = "https://join.ketokrate.com/cybermonday"
+  status = 302
+  force = true

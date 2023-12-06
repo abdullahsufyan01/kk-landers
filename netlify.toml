@@ -150,7 +150,7 @@
   force = true
 
   [[redirects]]
-  from = ""
+  from = "/"
   to = "https://join.ketokrate.com/holiday"
   status = 302
   force = true

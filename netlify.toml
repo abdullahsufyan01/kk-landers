@@ -23,7 +23,6 @@
   status = 302
   force = true
 
-
 [[redirects]]
   from = "/30-off"
   to = "https://join.ketokrate.com/holiday"
@@ -143,3 +142,65 @@
   to = "https://join.ketokrate.com/cybermonday"
   status = 302
   force = true
+
+  [[redirects]]
+  from = "fabfitfun"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = ""
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "ketogenicplus"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "kkguide"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "prepaid"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "spookybogorecharge"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "summer"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "cybermonday"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "lowcarbyum"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "ketogenicplus"
+  to = "https://join.ketokrate.com/holiday"
+  status = 302
+  force = true
+
+# endpoints live (holiday, beyond, bogoplus, merry-bogo) 

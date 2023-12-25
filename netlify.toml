@@ -209,4 +209,16 @@
   status = 302
   force = true
 
-# endpoints live (merry-bogo, beyond, bogoplus, merry-bogo) 
+  [[redirects]]
+  from = "holiday"
+  to = "https://join.ketokrate.com/merry-bogo"
+  status = 302
+  force = true
+
+  [[redirects]]
+  from = "beyond"
+  to = "https://join.ketokrate.com/merry-bogo"
+  status = 302
+  force = true
+
+# endpoints live (merry-bogo, bogoplus, merry-bogo) 

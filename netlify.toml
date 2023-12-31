@@ -77,17 +77,17 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "newyear"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "newyear"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "newyear-bogo"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "newyear-bogo"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "stay-25"

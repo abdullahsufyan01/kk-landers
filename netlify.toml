@@ -149,11 +149,11 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "/"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "/"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "ketogenicplus"

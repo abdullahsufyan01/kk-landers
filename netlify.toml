@@ -89,17 +89,17 @@
   # status = 302
   # force = true
 
-  [[redirects]]
-  from = "stay-25"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "stay-25"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "25-off"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "25-off"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "curlygirlz"

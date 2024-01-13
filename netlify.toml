@@ -107,47 +107,47 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "ketoguide"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "ketoguide"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "memorialday"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "memorialday"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "bundle"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "bundle"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "snackfun"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "snackfun"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "25plus"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "25plus"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "blackfriday"
-  to = "https://join.ketokrate.com/cybermonday"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "blackfriday"
+  # to = "https://join.ketokrate.com/cybermonday"
+  # status = 302
+  # force = true
 
-  [[redirects]]
-  from = "fabfitfun"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "fabfitfun"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "/"
@@ -161,11 +161,11 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "kkguide"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "kkguide"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "prepaid"
@@ -215,10 +215,10 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "beyond"
-  to = "https://join.ketokrate.com/merry-bogo"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "beyond"
+  # to = "https://join.ketokrate.com/merry-bogo"
+  # status = 302
+  # force = true
 
 # endpoints live (merry-bogo, bogoplus, merry-bogo) 

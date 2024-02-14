@@ -227,16 +227,16 @@
   status = 302
   force = true
 
-  # [[redirects]]
-  # from = "newyear2024"
-  # to = "https://join.ketokrate.com/getbundle"
-  # status = 302
-  # force = true
+  [[redirects]]
+  from = "newyear2024"
+  to = "https://join.ketokrate.com/getbundle"
+  status = 302
+  force = true
 
-  # [[redirects]]
-  # from = "newyear20242"
-  # to = "https://join.ketokrate.com/getbundle"
-  # status = 302
-  # force = true
+  [[redirects]]
+  from = "newyear20242"
+  to = "https://join.ketokrate.com/getbundle"
+  status = 302
+  force = true
 
 # endpoints live (merry-bogo, bogoplus, merry-bogo) 

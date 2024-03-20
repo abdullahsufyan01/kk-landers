@@ -285,6 +285,9 @@ buttonsArray.forEach((button) => {
       discountCode = "1monthprepaid"
     }
 
+    if (window.location.pathname == "/cookies"){
+      discountCode = "COOKIESPLS"
+    }
     getReChargeCheckout({ discountCode });
   });
 });

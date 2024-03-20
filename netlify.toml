@@ -5,23 +5,23 @@
   force = true
 
 
-[[redirects]]
-  from = "/spookybogo"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/spookybogo"
+#   to = "https://join.ketokrate.com/getbundle"
+#   status = 302
+#   force = true
 
-[[redirects]]
-  from = "/bogo"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/bogo"
+#   to = "https://join.ketokrate.com/getbundle"
+#   status = 302
+#   force = true
 
-[[redirects]]
-  from = "/subscribe-bogo"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/subscribe-bogo"
+#   to = "https://join.ketokrate.com/getbundle"
+#   status = 302
+#   force = true
 
 [[redirects]]
   from = "/30-off"
@@ -29,17 +29,17 @@
   status = 302
   force = true
 
-[[redirects]]
-  from = "/black-friday-came-early"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/black-friday-came-early"
+#   to = "https://join.ketokrate.com/getbundle"
+#   status = 302
+#   force = true
 
-[[redirects]]
-  from = "/black-friday-deal"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/black-friday-deal"
+#   to = "https://join.ketokrate.com/getbundle"
+#   status = 302
+#   force = true
 
 [[redirects]]
   from = "/cyber-monday-sale"
@@ -59,11 +59,11 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "/bf-bogo"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "/bf-bogo"
+  # to = "https://join.ketokrate.com/getbundle"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "cm-bogo"
@@ -137,11 +137,11 @@
   status = 302
   force = true
 
-  [[redirects]]
-  from = "blackfriday"
-  to = "https://join.ketokrate.com/getbundle"
-  status = 302
-  force = true
+  # [[redirects]]
+  # from = "blackfriday"
+  # to = "https://join.ketokrate.com/getbundle"
+  # status = 302
+  # force = true
 
   [[redirects]]
   from = "fabfitfun"

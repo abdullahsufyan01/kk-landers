@@ -1224,10 +1224,6 @@ section.keto-promo {
     image-rendering: auto;
 }
 
-.keto-promo .promo-cnt{
-    /* padding: 70px 0; */
-}
-
 .keto-promo .promo-cnt h2,
 .keto-promo .promo-cnt p {
     color: white;

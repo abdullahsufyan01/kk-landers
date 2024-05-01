@@ -1,5 +1,6 @@
 import "../../assets/fonts/stylesheet.css";
 import "../styles/styles.css";
+import "../styles/css/styles.css"
 import "lazysizes";
 import toggle from "./modules/FAQ.js";
 import {

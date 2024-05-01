@@ -5,6 +5,11 @@
     -webkit-font-smoothing: inherit
 }
 
+html.kk-sales body{
+    color: unset;
+    position: relative;
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -15,8 +20,8 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    /* src: url(../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2"); */
-    src: url(../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
+    /* src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2"); */
+    src: url(../../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -26,7 +31,8 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
+    /* src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2"); */
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -36,7 +42,7 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2");
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -46,7 +52,7 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -56,7 +62,7 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -66,7 +72,7 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -76,7 +82,7 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
@@ -86,7 +92,7 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
@@ -96,46 +102,46 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
 @font-face {
     font-family: Soleil Book;
-    src: url(../kk-fonts/fredoka/soleil-book/Soleil-Book.woff2);
+    src: url(../../kk-fonts/fredoka/soleil-book/Soleil-Book.woff2);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Extra Light;
     /* src: url(https://framerusercnt.com/assets/OidZ8w5Ik5K8C5ftHtipw3claU.otf); */
-    src: url(../kk-fonts/fredoka/alaska/Alaska-Extra-Light.otf);
+    src: url(../../kk-fonts/fredoka/alaska/Alaska-Extra-Light.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Regular;
     /* src: url(https://framerusercnt.com/assets/ZeSoawZkbvQ0jJC3v0ATkvjmlcs.otf); */
-    src: url(../kk-fonts/fredoka/alaska/Alaska-Regular.otf);
+    src: url(../../kk-fonts/fredoka/alaska/Alaska-Regular.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Medium;
     /* src: url(https://framerusercnt.com/assets/3l4Kp5MxJ3BcPMkl698bXyzikQQ.otf); */
-    src: url(../kk-fonts/fredoka/alaska/Alaska-Medium.otf);
+    src: url(../../kk-fonts/fredoka/alaska/Alaska-Medium.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Light;
-    src: url(../kk-fonts/fredoka/alaska/Alaska-Light.otf);
+    src: url(../../kk-fonts/fredoka/alaska/Alaska-Light.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Book;
-    src: url(../kk-fonts/fredoka/alaska/Alaska-Book.otf);
+    src: url(../../kk-fonts/fredoka/alaska/Alaska-Book.otf);
     font-display: swap
 }
 
@@ -302,49 +308,55 @@ header {
     z-index: 100;
 }
 
-header .container,
-section.banner .container {
+header .kk-container,
+section.kk-banner .kk-container {
     max-width: 1460px;
     margin: 0 auto;
 }
 
-header nav .logo {
+header nav {
+    background-color: unset;
+    display: block;
+    min-height: unset;
+}
+
+header nav .kk-logo {
     width: 144px;
 }
 
-header nav .logo img {
+header nav .kk-logo img {
     width: 100%;
     height: auto;
 }
 
-.mobile-logo{
+.mobile-kk-logo{
     display: none;
 }
-.desktop-logo{
+.desktop-kk-logo{
     display: block;
 }
 
-header nav .flayer {
+header nav .kk-flayer {
     max-width: fit-content;
 }
 
-header nav .flayer .fl-cnt p {
+header nav .kk-flayer .kk-fl-cnt p {
     font-size: 16px;
     font-family: Alaska Medium;
 
 }
 
-header nav .flayer .fl-stckr img {
+header nav .kk-flayer .kk-fl-stckr img {
     width: 92px;
     height: auto;
     margin-left: 20px;
 }
 
-header nav .hd-lnk-btn {
+header nav .kk-hd-lnk-btn {
     max-width: fit-content;
 }
 
-a.get-start {
+a.kk-get-start {
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
@@ -354,16 +366,16 @@ a.get-start {
     border-radius: 63px;
 }
 
-section.banner {
+section.kk-banner {
     padding: 100px 0 60px 0;
 }
 
-.banner .col-left,
-.banner .col-right {
+.kk-banner .kk-col-left,
+.kk-banner .kk-col-right {
     width: 49.5%;
 }
 
-.banner .col-left .cnt h1 {
+.kk-banner .kk-col-left .cnt h1 {
     font-size: 72px;
     font-family: Fredoka;
     font-weight: 600;
@@ -371,7 +383,7 @@ section.banner {
     color: var(--text-black);
 }
 
-.banner .col-left .cnt h3 {
+.kk-banner .kk-col-left .cnt h3 {
     font-size: 22px;
     color: var(--text-black);
     font-family: Alaska Regular;
@@ -383,18 +395,18 @@ section.banner {
     display: none;
 }
 
-.testimonial {
+.kk-testimonial {
     margin-top: 60px;
     max-width: 65%;
 }
 
-.banner .col-left .testimonial,
-.keto-purpose .col-left .testimonial {
+.kk-banner .kk-col-left .kk-testimonial,
+.keto-purpose .kk-col-left .kk-testimonial {
     margin-top: 60px;
     max-width: 65%;
 }
 
-.testimonial img {
+.kk-testimonial img {
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -403,8 +415,8 @@ section.banner {
 }
 
 
-.banner .col-left .testimonial img,
-.keto-purpose .col-left .testimonial img {
+.kk-banner .kk-col-left .kk-testimonial img,
+.keto-purpose .kk-col-left .kk-testimonial img {
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -412,35 +424,35 @@ section.banner {
     object-fit: cover;
 }
 
-.testimonial p {
+.kk-testimonial p {
     font-size: 16px;
     color: var(--text-black);
     font-family: Alaska Extra Light;
 }
 
 
-.banner .col-left .testimonial p,
-.keto-purpose .col-left .testimonial p {
+.kk-banner .kk-col-left .kk-testimonial p,
+.keto-purpose .kk-col-left .kk-testimonial p {
     font-size: 16px;
     color: var(--text-black);
     font-family: Alaska Extra Light;
 }
 
-.banner .col-right .bnr-img-wrpr {
+.kk-banner .kk-col-right .kk-bnr-img-wrpr {
     position: relative;
     border-radius: 10px;
     width: 100%;
 }
 
 
-.banner .col-right .bnr-img img {
+.kk-banner .kk-col-right .kk-bnr-img img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
     min-height: 715px;
 }
 
-.banner .col-right .bnr-img-cnt .bbl {
+.kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl {
     box-shadow: 0 1px 2px #00000040;
     padding: 8px 16px 8px 18px;
     border-radius: 50px;
@@ -449,23 +461,23 @@ section.banner {
     background-color: white;
 }
 
-.banner .col-right .bnr-img-cnt .bbl-one {
+.kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
     top: 64px;
     background: white;
     left: -194px;
 }
 
-.banner .col-right .bnr-img-cnt .bbl-two {
+.kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
     top: 23%;
     right: -55px;
 }
 
-.banner .col-right .bnr-img-cnt .bbl-three {
+.kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-three {
     left: 57px;
     top: 88%;
 }
 
-.banner .col-right .bbl p {
+.kk-banner .kk-col-right .kk-bbl p {
     font-size: 18px;
     font-family: Fredoka;
     font-weight: 600;
@@ -475,7 +487,7 @@ section.banner {
     color: var(--text-black-1);
 }
 
-.banner .col-right .bbl-one-indicator {
+.kk-banner .kk-col-right .kk-bbl-one-indicator {
     width: 6%;
     transform: rotate(-80deg) translateZ(0px);
     position: absolute;
@@ -483,7 +495,7 @@ section.banner {
     left: -27px;
 }
 
-.banner .col-right .bbl-two-indicator {
+.kk-banner .kk-col-right .kk-bbl-two-indicator {
     width: 15%;
     position: absolute;
     top: 31%;
@@ -491,7 +503,7 @@ section.banner {
     transform: rotate(-15deg) translateZ(0px);
 }
 
-.banner .col-right .bbl-three-indicator {
+.kk-banner .kk-col-right .kk-bbl-three-indicator {
     width: 17%;
     position: absolute;
     top: 74%;
@@ -512,7 +524,7 @@ section.keto-abt {
     display: none !important;
 }
 
-.container {
+.kk-container {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -522,7 +534,7 @@ section.keto-abt {
     background-color: white;
 }
 
-section.keto-abt .col-left {
+section.keto-abt .kk-col-left {
     width: 38%;
     padding-left: 60px;
 }
@@ -547,11 +559,11 @@ section.keto-abt .col-left {
     margin-bottom: 25px;
 }
 
-section.keto-abt .col-right {
+section.keto-abt .kk-col-right {
     width: 57%;
 }
 
-section.keto-abt .col-right .abt-img img {
+section.keto-abt .kk-col-right .abt-img img {
     height: auto;
     width: 100%;
     border-radius: 0 10px 10px 0;
@@ -634,11 +646,11 @@ section.keto-cheats .cheats-wrapper .slideds-row {
     gap: 50px;
 }
 
-section.keto-cheats .cheats-wrapper .col-left {
+section.keto-cheats .cheats-wrapper .kk-col-left {
     width: 54%;
 }
 
-section.keto-cheats .cheats-wrapper .col-right {
+section.keto-cheats .cheats-wrapper .kk-col-right {
     width: 41%;
 }
 
@@ -704,17 +716,17 @@ section.keto-cheats .cheats-wrapper .row-full {
     overflow: hidden;
 }
 
-.cheat-rslt .ch-rs-wrapper .col-left {
+.cheat-rslt .ch-rs-wrapper .kk-col-left {
     width: 42%;
     padding: 165px 0;
 }
 
-.cheat-rslt .ch-rs-wrapper .col-right {
+.cheat-rslt .ch-rs-wrapper .kk-col-right {
     width: 52%;
     position: relative;
 }
 
-.cheat-rslt .ch-rs-wrapper .col-right img {
+.cheat-rslt .ch-rs-wrapper .kk-col-right img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -725,17 +737,17 @@ section.keto-fomo {
     padding: 100px 0 160px;
 }
 
-section.keto-fomo .col-left {
+section.keto-fomo .kk-col-left {
     width: 42%;
     padding-left: 60px;
 }
 
-section.keto-fomo .col-right {
+section.keto-fomo .kk-col-right {
     width: 52%;
     position: relative;
 }
 
-section.keto-fomo .col-left .fomo-cnt ul {
+section.keto-fomo .kk-col-left .fomo-cnt ul {
     list-style-type: none;
 }
 
@@ -762,7 +774,7 @@ section.keto-fomo .fomo-cnt ul li {
     background-color: var(--sky-blue);
 }
 
-section.keto-fomo .col-right .fomo-img img,
+section.keto-fomo .kk-col-right .fomo-img img,
 section.keto-perks .bg-img img {
     width: 100%;
     height: 100%;
@@ -798,21 +810,21 @@ section.keto-featured-vd {
     position: relative;
 }
 
-.fs-vd-row .col-left {
+.fs-vd-row .kk-col-left {
     width: 52%;
 }
 
-.fs-vd-row .col-right {
+.fs-vd-row .kk-col-right {
     width: 42%;
 }
 
-.fs-vd-row .col-left .f-vd-wrap {
+.fs-vd-row .kk-col-left .f-vd-wrap {
     max-width: 52%;
     margin-inline: auto;
     ;
 }
 
-.fs-vd-row .col-left .f-vd-wrap video {
+.fs-vd-row .kk-col-left .f-vd-wrap video {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -820,7 +832,7 @@ section.keto-featured-vd {
     border-right: 4px solid black;
 }
 
-.fs-vd-row .col-right h3 {
+.fs-vd-row .kk-col-right h3 {
     font-size: 43px;
     font-family: Fredoka;
     font-weight: 500;
@@ -834,7 +846,7 @@ section.keto-featured-vd {
     position: relative;
 }
 
-.fs-vd-row .col-right h2 {
+.fs-vd-row .kk-col-right h2 {
     font-size: 72px;
     font-family: Fredoka;
     font-weight: 600;
@@ -849,17 +861,17 @@ section.keto-featured-vd {
     margin-bottom: 30px;
 }
 
-.fs-vd-row .col-right h3:nth-child(1) {
+.fs-vd-row .kk-col-right h3:nth-child(1) {
     margin-top: 130px;
 
 }
 
-.fs-vd-row .col-right h3:nth-child(3) {
+.fs-vd-row .kk-col-right h3:nth-child(3) {
     transform: translateX(-27%) rotate(-5deg) translateZ(0px);
 
 }
 
-.fs-vd-row .col-right h3:nth-child(1)::before {
+.fs-vd-row .kk-col-right h3:nth-child(1)::before {
     content: "“";
     color: var(--ink-blue);
     font-size: 160px;
@@ -869,7 +881,7 @@ section.keto-featured-vd {
 
 }
 
-.fs-vd-row .col-right h3:nth-child(3)::before {
+.fs-vd-row .kk-col-right h3:nth-child(3)::before {
     content: "”";
     color: var(--ink-blue);
     font-size: 160px;
@@ -892,7 +904,7 @@ section.keto-faq {
     text-align: center;
 }
 
-.keto-faq .acc-container {
+.keto-faq .acc-kk-container {
     max-width: 1000px;
     margin: 60px auto 0;
 }
@@ -965,22 +977,22 @@ section.keto-purpose {
     padding: 80px 0 100px;
 }
 
-.keto-purpose .col-left {
+.keto-purpose .kk-col-left {
     width: 52%;
     padding-left: 60px;
 }
 
-.keto-purpose .col-right {
+.keto-purpose .kk-col-right {
     width: 48%;
 }
 
-.keto-purpose .col-left .testimonial .row-testimonial {
+.keto-purpose .kk-col-left .kk-testimonial .kk-row-testimonial {
     padding: 10px;
     border-radius: 8px;
     background-color: var(--sky-blue);
 }
 
-.keto-purpose .col-right img {
+.keto-purpose .kk-col-right img {
     border-radius: 10px;
 }
 
@@ -994,7 +1006,7 @@ section.keto-products .cnt {
     margin-bottom: 60px;
 }
 
-.keto-products .swiper-container {
+.keto-products .swiper-kk-container {
     width: 100%;
 }
 
@@ -1139,63 +1151,64 @@ div.keto-prod-slider ul.keto-prod-lane li.keto-prod-slide {
 }
 
 .sld-1 {
-    background-image: url(../images/kk-images/slides/1.mp4);
+    /* background-image: url(../../images/kk-images/slides/1.mp4); */
+    background-image: url(../../images/kk-images/slides/1.mp4);
 }
 
 .sld-2 {
-    background-image: url(../images/kk-images/slides/2.jpg);
+    background-image: url(../../images/kk-images/slides/2.jpg);
 }
 
 .sld-3 {
-    background-image: url(../images/kk-images/slides/3.mp4);
+    background-image: url(../../images/kk-images/slides/3.mp4);
 }
 
 .sld-4 {
-    background-image: url(../images/kk-images/slides/4.jpg);
+    background-image: url(../../images/kk-images/slides/4.jpg);
 }
 
 .sld-5 {
-    background-image: url(../images/kk-images/slides/5.mp4);
+    background-image: url(../../images/kk-images/slides/5.mp4);
 }
 
 .sld-6 {
-    background-image: url(../images/kk-images/slides/6.jpg);
+    background-image: url(../../images/kk-images/slides/6.jpg);
 }
 
 .sld-7 {
-    background-image: url(../images/kk-images/slides/7.mp4);
+    background-image: url(../../images/kk-images/slides/7.mp4);
 }
 
 .sld-8 {
-    background-image: url(../images/kk-images/slides/8.jpg);
+    background-image: url(../../images/kk-images/slides/8.jpg);
 }
 
 .sld-9 {
-    background-image: url(../images/kk-images/slides/9.mp4);
+    background-image: url(../../images/kk-images/slides/9.mp4);
 }
 
 .sld-10 {
-    background-image: url(../images/kk-images/slides/10.jpg);
+    background-image: url(../../images/kk-images/slides/10.jpg);
 }
 
 .sld-11 {
-    background-image: url(../images/kk-images/slides/11.mp4);
+    background-image: url(../../images/kk-images/slides/11.mp4);
 }
 
 .sld-12 {
-    background-image: url(../images/kk-images/slides/12.jpg);
+    background-image: url(../../images/kk-images/slides/12.jpg);
 }
 
 .sld-13 {
-    background-image: url(../images/kk-images/slides/13.mp4);
+    background-image: url(../../images/kk-images/slides/13.mp4);
 }
 
 .sld-14 {
-    background-image: url(../images/kk-images/slides/14.jpg);
+    background-image: url(../../images/kk-images/slides/14.jpg);
 }
 
 .sld-15 {
-    background-image: url(../images/kk-images/slides/15.jpg);
+    background-image: url(../../images/kk-images/slides/15.jpg);
 
 }
 
@@ -1234,60 +1247,60 @@ section.keto-promo {
     z-index: 99;
 }
 
-.keto-promo .col-left {
+.keto-promo .kk-col-left {
     padding-left: 60px;
     padding-top: 60px;
     width: 42%;
 }
 
-.keto-promo .col-right {
+.keto-promo .kk-col-right {
     width: 58%;
 }
 
-.keto-promo .col-right video {
+.keto-promo .kk-col-right video {
     object-fit: cover;
     border-radius: 50%;
     border: 9px solid white;
     
 }
 
-.keto-promo .col-right video::-webkit-media-controls {
+.keto-promo .kk-col-right video::-webkit-media-controls {
     display: none !important;
 }
 
-.keto-promo .col-right video::-webkit-media-controls {
+.keto-promo .kk-col-right video::-webkit-media-controls {
     display: inherit !important;
 }
 
-.keto-promo .col-right video::-webkit-media-controls-enclosure {
+.keto-promo .kk-col-right video::-webkit-media-controls-enclosure {
     overflow: hidden !important;
 }
 
-.keto-promo .col-right .vd-1{
+.keto-promo .kk-col-right .vd-1{
     width: 381px;
     height: 381px;
 
 }
 
-.keto-promo .col-right .vd-1 video{
+.keto-promo .kk-col-right .vd-1 video{
     min-width: 381px;
 }
-.keto-promo .col-right .vd-2{
+.keto-promo .kk-col-right .vd-2{
     width: 193px;
     height: 193px;
     margin-top: 345px;
     margin-left: -25px;
 }
-.keto-promo .col-right .vd-2 video{
+.keto-promo .kk-col-right .vd-2 video{
     min-width: 193px;
 }
-.keto-promo .col-right .vd-3{
+.keto-promo .kk-col-right .vd-3{
     width: 270px;
     height: 270px;
     margin-top: 60px;
     margin-left: -123px;
 }
-.keto-promo .col-right .vd-3 video{
+.keto-promo .kk-col-right .vd-3 video{
     min-width: 270px;
 }
 
@@ -1339,47 +1352,47 @@ footer .cnt ul li:nth-child(1) {
 
 
 @media screen and (max-width:1580px) {
-    .banner .col-right .bnr-img-cnt .bbl-two{
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two{
         right: -25px;
     }
 
-    header .container, section.banner .container {
+    header .kk-container, section.kk-banner .kk-container {
         max-width: 1360px;
     }
 
    
 
-    .fs-vd-row .col-right h3 {
+    .fs-vd-row .kk-col-right h3 {
         font-size: 40px;
     }
 }
 @media screen and (max-width:1480px) {
-    header .container, section.banner .container {
+    header .kk-container, section.kk-banner .kk-container {
         max-width: 1280px;
     }
 
-    .container {
+    .kk-container {
         max-width: 1160px;
 
     }
 
-    .banner .col-right .bnr-img img{
+    .kk-banner .kk-col-right .kk-bnr-img img{
         min-height: 599px;
     }
 
-    .banner .col-left .cnt h1 {
+    .kk-banner .kk-col-left .cnt h1 {
         font-size: 58px;
     }
 
-    .banner .col-left .cnt h3 {
+    .kk-banner .kk-col-left .cnt h3 {
         font-size: 18px;
     }
 
-    .fs-vd-row .col-right h3 {
+    .fs-vd-row .kk-col-right h3 {
         font-size: 34px;
     }
 
-    .fs-vd-row .col-right h2 {
+    .fs-vd-row .kk-col-right h2 {
         font-size: 60px;
     }
 
@@ -1395,64 +1408,64 @@ footer .cnt ul li:nth-child(1) {
 }
 
 @media screen and (max-width:1299px){
-    header .container, section.banner .container {
+    header .kk-container, section.kk-banner .kk-container {
         max-width: 1140px;
     }
 
-    .container {
+    .kk-container {
         max-width: 1050px;
     }
 
-    header nav .logo {
+    header nav .kk-logo {
         width: 114px;
     }
 
-    header nav .flayer .fl-cnt p {
+    header nav .kk-flayer .kk-fl-cnt p {
         font-size: 14px;
     }
 
-    header nav .flayer .fl-stckr img {
+    header nav .kk-flayer .kk-fl-stckr img {
         width: 60px;
     }
 
-    a.get-start {
+    a.kk-get-start {
         font-size: 14px;
         padding: 7px 22px;
     }
 
-    .banner .col-right .bnr-img img {
+    .kk-banner .kk-col-right .kk-bnr-img img {
         min-height: 490px;
     }
 
-    .banner .col-left .cnt h1 {
+    .kk-banner .kk-col-left .cnt h1 {
         font-size: 44px;
     }
 
-    .banner .col-left .cnt h3 {
+    .kk-banner .kk-col-left .cnt h3 {
         font-size: 15px;
         margin-bottom: 30px;
     }
 
-    .banner .col-left .testimonial, .keto-purpose .col-left .testimonial {
+    .kk-banner .kk-col-left .kk-testimonial, .keto-purpose .kk-col-left .kk-testimonial {
         margin-top: 47px;
         max-width: 70%;
     }
 
-    .banner .col-right .bbl p {
+    .kk-banner .kk-col-right .kk-bbl p {
         font-size: 14px;
     }
 
-    .banner .col-right .bnr-img-cnt .bbl-one {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
         top: 50px;
         left: -164px;
     }
 
-    .banner .col-right .bbl-two-indicator {
+    .kk-banner .kk-col-right .kk-bbl-two-indicator {
         width: 11%;
         top: 33%;
     }
 
-    .banner .col-right .bbl-three-indicator {
+    .kk-banner .kk-col-right .kk-bbl-three-indicator {
         width: 12%;
         top: 76%;
         left: 10%
@@ -1480,49 +1493,49 @@ footer .cnt ul li:nth-child(1) {
         font-size: 28px;
     }
 
-    .keto-promo .col-right .vd-1 {
+    .keto-promo .kk-col-right .vd-1 {
         width: 266px;
         height: 266px;
     }
 
-    .keto-promo .col-right .vd-1 video {
+    .keto-promo .kk-col-right .vd-1 video {
         min-width: 266px;
     }
 
-    .keto-promo .col-right .vd-3 {
+    .keto-promo .kk-col-right .vd-3 {
         width: 210px;
         height: 210px;
         margin-top: 52px;
     margin-left: -70px;
     }
 
-    .keto-promo .col-right .vd-3 video {
+    .keto-promo .kk-col-right .vd-3 video {
         min-width: 210px;
     }
 
-    .keto-promo .col-right .vd-2 {
+    .keto-promo .kk-col-right .vd-2 {
         width: 123px;
         height: 123px;
         margin-top: 254px;
         margin-left: -43px;
     }
 
-    .keto-promo .col-right .vd-2 video {
+    .keto-promo .kk-col-right .vd-2 video {
         min-width: 123px;
     }
 
-    .banner .col-right .bnr-img-cnt .bbl-two {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
         right: -15px;
     }
-    .banner .col-right .bnr-img-cnt .bbl {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl {
         padding: 5px 10px 5px 12px;
     }
 
-    .banner .col-left .testimonial p, .keto-purpose .col-left .testimonial p {
+    .kk-banner .kk-col-left .kk-testimonial p, .keto-purpose .kk-col-left .kk-testimonial p {
         font-size: 14px;
     }
 
-    .banner .col-right .bbl-one-indicator{
+    .kk-banner .kk-col-right .kk-bbl-one-indicator{
         top: 78px;
     }
 
@@ -1544,7 +1557,7 @@ footer .cnt ul li:nth-child(1) {
         height: 30px !important;
     }
 
-    .cheat-rslt .ch-rs-wrapper .col-left {
+    .cheat-rslt .ch-rs-wrapper .kk-col-left {
         padding: 126px 0;
     }
 
@@ -1564,15 +1577,15 @@ footer .cnt ul li:nth-child(1) {
         padding: 70px;
     }
 
-    .fs-vd-row .col-right h3 {
+    .fs-vd-row .kk-col-right h3 {
         font-size: 30px;
     }
 
-    .fs-vd-row .col-right h3:nth-child(1) {
+    .fs-vd-row .kk-col-right h3:nth-child(1) {
         margin-top: 100px;
     }
 
-    .fs-vd-row .col-right h2 {
+    .fs-vd-row .kk-col-right h2 {
         font-size: 45px;
     }
 
@@ -1584,7 +1597,7 @@ footer .cnt ul li:nth-child(1) {
         font-size: 44px;
     }
 
-    .keto-faq .acc-container {
+    .keto-faq .acc-kk-container {
         max-width: 780px;
     }
 
@@ -1599,15 +1612,15 @@ footer .cnt ul li:nth-child(1) {
 }
 
 @media screen and (max-width: 1150px){
-    header .container, section.banner .container {
+    header .kk-container, section.kk-banner .kk-container {
         max-width: 950px;
     }
 
-    .container {
+    .kk-container {
         max-width: 900px;
     }
 
-    header nav .flayer .fl-stckr img {
+    header nav .kk-flayer .kk-fl-stckr img {
         display: none;
     }
 
@@ -1650,26 +1663,26 @@ footer .cnt ul li:nth-child(1) {
         flex-direction: column-reverse;
     }
 
-    .keto-purpose .col-right{
+    .keto-purpose .kk-col-right{
         margin-bottom: 30px;
     }
-    .keto-purpose .col-left,
-    .keto-purpose .col-right{
+    .keto-purpose .kk-col-left,
+    .keto-purpose .kk-col-right{
         width: 100%;
     }
 
-    .keto-purpose .col-left{
+    .keto-purpose .kk-col-left{
         text-align: center;
         padding: 0;
     }
 
-    .keto-purpose .col-left .testimonial{
+    .keto-purpose .kk-col-left .kk-testimonial{
         width: 100%;
     }
 }
 
 @media only screen and (min-width: 310px) and (max-width: 850px) {
-    header .container{
+    header .kk-container{
         max-width: 98%;
         width: 98%;
     }
@@ -1677,55 +1690,55 @@ footer .cnt ul li:nth-child(1) {
     header {
         padding: 15px 20px;
     }
-    header nav .logo {
+    header nav .kk-logo {
         width: fit-content;
     }
 
-    header nav .flayer .fl-cnt p {
+    header nav .kk-flayer .kk-fl-cnt p {
         font-size: 11px;
     }
 
-    .container{
+    .kk-container{
         width: 528px;
         max-width: 100%;
     
     }
 
-    .banner .col-left .cnt h3{
+    .kk-banner .kk-col-left .cnt h3{
         max-width: 63%;
         margin-inline: auto;
     }
 
-    .banner .col-left .cnt h3 br{
+    .kk-banner .kk-col-left .cnt h3 br{
         display: none;
     }
     
-    section.banner .container {
+    section.kk-banner .kk-container {
         max-width: 90%;
     }
-    .desktop-logo{
+    .desktop-kk-logo{
         display: none;
 
     }
 
-    .mobile-logo{
+    .mobile-kk-logo{
         display: block;
 
     }
 
-    .mobile-logo img{
+    .mobile-kk-logo img{
         width: 50px !important;
     }
 
-    .banner .col-left, .banner .col-right {
+    .kk-banner .kk-col-left, .kk-banner .kk-col-right {
         width: 100%;
     }
 
-    .banner .col-left{
+    .kk-banner .kk-col-left{
         text-align: center;
     }
 
-    .banner .col-left .testimonial {
+    .kk-banner .kk-col-left .kk-testimonial {
        display: none;
     }
 
@@ -1737,12 +1750,12 @@ footer .cnt ul li:nth-child(1) {
         margin-top: 35px;
     }
 
-    .banner .col-right .bbl-one-indicator{
+    .kk-banner .kk-col-right .kk-bbl-one-indicator{
         transform: rotate(-30deg) translateZ(0px);
     }
 
     
-    .banner .col-right .testimonial {
+    .kk-banner .kk-col-right .kk-testimonial {
         background-color: var(--sky-blue);
         padding: 5px 10px;
         border-radius: 10px;
@@ -1764,7 +1777,7 @@ footer .cnt ul li:nth-child(1) {
         width: 100%;
     }
 
-    .keto-abt .abt-row .col-left{
+    .keto-abt .abt-row .kk-col-left{
         background-color: white;
         text-align: center;
         padding: 20px 30px;
@@ -1846,8 +1859,8 @@ footer .cnt ul li:nth-child(1) {
        left: 70%;
     }
 
-    .cheat-rslt .ch-rs-wrapper .col-left,
-    .cheat-rslt .ch-rs-wrapper .col-right{
+    .cheat-rslt .ch-rs-wrapper .kk-col-left,
+    .cheat-rslt .ch-rs-wrapper .kk-col-right{
         width: 100%;
     }
 
@@ -1855,11 +1868,11 @@ footer .cnt ul li:nth-child(1) {
         flex-direction: column-reverse;
     }
 
-    .cheat-rslt .ch-rs-wrapper .col-right  .keto-ch-rs-img{
+    .cheat-rslt .ch-rs-wrapper .kk-col-right  .keto-ch-rs-img{
         width: 100%;
     }
 
-    .cheat-rslt .ch-rs-wrapper .col-right img{
+    .cheat-rslt .ch-rs-wrapper .kk-col-right img{
         position: initial;
     }
 
@@ -1867,7 +1880,7 @@ footer .cnt ul li:nth-child(1) {
         padding-left: 0px;
     }
 
-    .cheat-rslt .ch-rs-wrapper .col-left {
+    .cheat-rslt .ch-rs-wrapper .kk-col-left {
         padding: 30px 10px;
         text-align: center;
     }
@@ -1880,23 +1893,23 @@ footer .cnt ul li:nth-child(1) {
         flex-direction: column-reverse;
     }
 
-    section.keto-fomo .col-left,
-    section.keto-fomo .col-right{
+    section.keto-fomo .kk-col-left,
+    section.keto-fomo .kk-col-right{
         width: 100%;
     }
 
-    section.keto-fomo .col-left{
+    section.keto-fomo .kk-col-left{
         text-align: center;
         padding: 0;
     }
 
-    section.keto-fomo .col-left .fomo-cnt ul {
+    section.keto-fomo .kk-col-left .fomo-cnt ul {
        
         max-width: 290px;
         margin: auto;
     }
 
-    section.keto-fomo .col-right .fomo-img img{
+    section.keto-fomo .kk-col-right .fomo-img img{
         position: initial;
         margin-bottom: 30px;
     }
@@ -1905,31 +1918,31 @@ footer .cnt ul li:nth-child(1) {
         flex-direction: column;
     }
 
-    .keto-promo .col-left {
+    .keto-promo .kk-col-left {
         text-align: center;
         width: 100%;
         padding: 0;
     }
 
-    .keto-promo .col-right .vd-1 {
+    .keto-promo .kk-col-right .vd-1 {
         width: 200px;
         height: 200px;
     }
 
 
-    .keto-promo .col-right .vd-1 video {
+    .keto-promo .kk-col-right .vd-1 video {
         min-width: 200px;
         margin-left: -60px;
     }
 
-    .keto-promo .col-right .vd-3 {
+    .keto-promo .kk-col-right .vd-3 {
         width: 150px;
         height: 150px;
         margin-top: 52px;
         margin-left: -70px;
     }
 
-    .keto-promo .col-right .vd-3 video {
+    .keto-promo .kk-col-right .vd-3 video {
         min-width: 150px;
     }
 
@@ -1953,20 +1966,20 @@ footer .cnt ul li:nth-child(1) {
     .fs-vd-row {
         flex-direction: column-reverse;
     }
-    .fs-vd-row .col-left,
-    .fs-vd-row .col-right {
+    .fs-vd-row .kk-col-left,
+    .fs-vd-row .kk-col-right {
         width: 100%;
         
     }
 
-    .fs-vd-row .col-right .cnt{
+    .fs-vd-row .kk-col-right .cnt{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 60px ;
     }
-    section.keto-cheats .cheats-wrapper .col-left,
-    section.keto-cheats .cheats-wrapper .col-right{
+    section.keto-cheats .cheats-wrapper .kk-col-left,
+    section.keto-cheats .cheats-wrapper .kk-col-right{
         width: 100%;
     }
 
@@ -1975,27 +1988,27 @@ footer .cnt ul li:nth-child(1) {
         margin-top: 50px;
     }
     
-    .fs-vd-row .col-left .f-vd-wrap {
+    .fs-vd-row .kk-col-left .f-vd-wrap {
         max-width: 80%;
     }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 850px) {
-    .banner .col-right .bnr-img-wrpr{
+    .kk-banner .kk-col-right .kk-bnr-img-wrpr{
         max-width: 100%;
         margin: auto;
     }
 
-    .banner .col-right .bnr-img-cnt .bbl-one {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
         top: 30px;
         left: 23px;
     }
 
-    .banner .col-right .bbl-one-indicator{
+    .kk-banner .kk-col-right .kk-bbl-one-indicator{
        left: 50px;
     }
 
-    .testimonial {
+    .kk-testimonial {
         max-width: 100%;
         margin: 30px auto 0;
     }
@@ -2025,21 +2038,21 @@ footer .cnt ul li:nth-child(1) {
         font-size: 22px;
     }
 
-    header nav .flayer .fl-cnt p{
+    header nav .kk-flayer .kk-fl-cnt p{
         display: none;
     }
 
-    .fs-vd-row .col-right h3 {
+    .fs-vd-row .kk-col-right h3 {
         font-size: 22px;
     }
 
-    .fs-vd-row .col-right h2 {
+    .fs-vd-row .kk-col-right h2 {
         font-size: 30px;
         margin: 12PX 0;
     }
 
-    .fs-vd-row .col-right h3:nth-child(1)::before,
-    .fs-vd-row .col-right h3:nth-child(3)::before{
+    .fs-vd-row .kk-col-right h3:nth-child(1)::before,
+    .fs-vd-row .kk-col-right h3:nth-child(3)::before{
         font-size: 120px;
     }
 
@@ -2048,10 +2061,10 @@ footer .cnt ul li:nth-child(1) {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 549px) {
-    header nav .flayer .fl-cnt p {
+    header nav .kk-flayer .kk-fl-cnt p {
         display: none;
     }
-    .container {
+    .kk-container {
         width: 92%;
         max-width: 100%;
     }
@@ -2068,14 +2081,14 @@ footer .cnt ul li:nth-child(1) {
         font-size: 22px;
     }
 
-    .mobile-logo img {
+    .mobile-kk-logo img {
         width: 30px !important;
     }
 
-    .banner .col-left .cnt h1 {
+    .kk-banner .kk-col-left .cnt h1 {
         font-size: 28px;
     }
-    .banner .col-left .cnt h3 {
+    .kk-banner .kk-col-left .cnt h3 {
         max-width: 90%;
         margin-inline: auto;
     }
@@ -2084,46 +2097,46 @@ footer .cnt ul li:nth-child(1) {
         flex-direction: column;
     }
 
-    .keto-promo .col-right .vd-1 video,
-    .keto-promo .col-right .vd-2 video,
-    .keto-promo .col-right .vd-3 video{
+    .keto-promo .kk-col-right .vd-1 video,
+    .keto-promo .kk-col-right .vd-2 video,
+    .keto-promo .kk-col-right .vd-3 video{
         margin-inline: auto;
     }
 
-    .keto-promo .col-right .vd-1,
-    .keto-promo .col-right .vd-2,
-    .keto-promo .col-right .vd-3{
+    .keto-promo .kk-col-right .vd-1,
+    .keto-promo .kk-col-right .vd-2,
+    .keto-promo .kk-col-right .vd-3{
         margin-inline: auto;
     }
 
-    .banner .col-right .bbl p {
+    .kk-banner .kk-col-right .kk-bbl p {
         font-size: 8px;
     }
 
-    .banner .col-right .bnr-img img {
+    .kk-banner .kk-col-right .kk-bnr-img img {
         min-height: 270px;
     }
 
-    .banner .col-right .bnr-img-cnt .bbl-one {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
         top: 14px;
         left: 5px;
     }
 
-    .banner .col-right .bbl-one-indicator{
+    .kk-banner .kk-col-right .kk-bbl-one-indicator{
         left: 30px;
         top: 58px;
     }
 
-    .banner .col-right .bnr-img-cnt .bbl-two {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
         right: 15px;
     }
 
-    .testimonial {
+    .kk-testimonial {
         margin-top: 60px;
         max-width: 100%;
     }
 
-    .testimonial p {
+    .kk-testimonial p {
         font-size: 10px;
     }
 
@@ -2139,20 +2152,20 @@ footer .cnt ul li:nth-child(1) {
         padding: 50px 0;
     }
     
-    .keto-promo .col-right .vd-2{
+    .keto-promo .kk-col-right .vd-2{
         margin-top: 35px;
     }
 
-    .fs-vd-row .col-right h3 {
+    .fs-vd-row .kk-col-right h3 {
         font-size: 14px;
     }
 
-    .fs-vd-row .col-right h2 {
+    .fs-vd-row .kk-col-right h2 {
         font-size: 22px;
         margin: 12px 0;
     }
 
-    .keto-purpose .col-left .testimonial{
+    .keto-purpose .kk-col-left .kk-testimonial{
         max-width: 100%;
     }
 }

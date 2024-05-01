@@ -20,8 +20,7 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    /* src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2"); */
-    src: url(../../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
+    src: url(../../kk-fonts/Fredoka.woff2) format("woff2");
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -31,8 +30,7 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
-    /* src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2"); */
+    src: url(../../kk-fonts/Fredoka.woff2) format("woff2");
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -42,7 +40,7 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka.woff2) format("woff2");
     unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
 }
 
@@ -52,7 +50,7 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -62,7 +60,7 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -72,7 +70,7 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-light.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-light.woff2) format("woff2");
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
 }
 
@@ -82,7 +80,7 @@ body {
     font-weight: 500;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
@@ -92,7 +90,7 @@ body {
     font-weight: 600;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
@@ -102,46 +100,46 @@ body {
     font-weight: 700;
     font-stretch: 100%;
     font-display: swap;
-    src: url(../../kk-fonts/fredoka/fredoka/Fredoka-regular.woff2) format("woff2");
+    src: url(../../kk-fonts/fredoka/Fredoka-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
 @font-face {
     font-family: Soleil Book;
-    src: url(../../kk-fonts/fredoka/soleil-book/Soleil-Book.woff2);
+    src: url(../../kk-fonts/soleil-book/Soleil-Book.woff2);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Extra Light;
     /* src: url(https://framerusercnt.com/assets/OidZ8w5Ik5K8C5ftHtipw3claU.otf); */
-    src: url(../../kk-fonts/fredoka/alaska/Alaska-Extra-Light.otf);
+    src: url(../../kk-fonts/alaska/Alaska-Extra-Light.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Regular;
     /* src: url(https://framerusercnt.com/assets/ZeSoawZkbvQ0jJC3v0ATkvjmlcs.otf); */
-    src: url(../../kk-fonts/fredoka/alaska/Alaska-Regular.otf);
+    src: url(../../kk-fonts/alaska/Alaska-Regular.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Medium;
     /* src: url(https://framerusercnt.com/assets/3l4Kp5MxJ3BcPMkl698bXyzikQQ.otf); */
-    src: url(../../kk-fonts/fredoka/alaska/Alaska-Medium.otf);
+    src: url(../../kk-fonts/alaska/Alaska-Medium.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Light;
-    src: url(../../kk-fonts/fredoka/alaska/Alaska-Light.otf);
+    src: url(../../kk-fonts/alaska/Alaska-Light.otf);
     font-display: swap
 }
 
 @font-face {
     font-family: Alaska Book;
-    src: url(../../kk-fonts/fredoka/alaska/Alaska-Book.otf);
+    src: url(../../kk-fonts/alaska/Alaska-Book.otf);
     font-display: swap
 }
 

@@ -5,13 +5,21 @@
     -webkit-font-smoothing: inherit
 }
 
-html.kk-sales body{
+html.kk-sales body {
     color: unset;
     position: relative;
 }
 
 body {
     scroll-behavior: smooth;
+}
+
+.mbl{
+    display: none;
+}
+
+.dskptop{
+    display: block;
 }
 
 @font-face {
@@ -298,12 +306,12 @@ svg {
 header {
     padding: 15px 60px;
     background-color: var(--bg-white);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 1px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    border: none;
 }
 
 header .kk-container,
@@ -327,10 +335,11 @@ header nav .kk-logo img {
     height: auto;
 }
 
-.mobile-kk-logo{
+.mobile-kk-logo {
     display: none;
 }
-.desktop-kk-logo{
+
+.desktop-kk-logo {
     display: block;
 }
 
@@ -354,7 +363,53 @@ header nav .kk-hd-lnk-btn {
     max-width: fit-content;
 }
 
-a.kk-get-start {
+@keyframes logoAnimation {
+    0% {
+        transform: scale(10%);
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+
+/*---------------------------------- header anim start  */
+
+.kk-flayer {
+    position: relative;
+    overflow: hidden;
+}
+
+#flayer-text {
+    width: 0;
+    transition: width 2s ease;
+    /* Adjust the duration as needed */
+    white-space: nowrap;
+    /* Prevents the text from wrapping */
+}
+
+
+
+/*------------------------------------ header anim end  */
+
+
+ 
+
+.kk-get-start {
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
@@ -362,7 +417,13 @@ a.kk-get-start {
     font-family: Alaska Medium;
     padding: 7px 30px;
     border-radius: 63px;
+    position: relative;
+    overflow: hidden;
+   
 }
+
+
+
 
 section.kk-banner {
     padding: 100px 0 60px 0;
@@ -389,7 +450,7 @@ section.kk-banner {
     margin-bottom: 50px;
 }
 
-.mobil-kk-bnr-img{
+.mobil-kk-bnr-img {
     display: none;
 }
 
@@ -501,6 +562,20 @@ section.kk-banner {
     transform: rotate(-15deg) translateZ(0px);
 }
 
+section.keto-products .cnt svg {
+    max-width: 25%;
+
+}
+
+#strokePath {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    transition: stroke-dashoffset 5s ease-in-out;
+}
+
+
+
+
 .kk-banner .kk-col-right .kk-bbl-three-indicator {
     width: 17%;
     position: absolute;
@@ -514,11 +589,11 @@ section.kk-keto-abt {
     position: relative;
 }
 
-.abt-desktop-bg{
+.abt-desktop-bg {
     display: block;
 }
 
-.abt-mbl-bg{
+.abt-mbl-bg {
     display: none !important;
 }
 
@@ -740,6 +815,19 @@ section.keto-fomo .kk-col-left {
     padding-left: 60px;
 }
 
+section.keto-fomo .kk-col-left .fomo-cnt.cnt h2 span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(15%);
+    opacity: 0;
+}
+
+section.keto-fomo .kk-col-left .fomo-cnt.cnt h2 span.show {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
 section.keto-fomo .kk-col-right {
     width: 52%;
     position: relative;
@@ -819,15 +907,12 @@ section.keto-featured-vd {
 .fs-vd-row .kk-col-left .f-vd-wrap {
     max-width: 52%;
     margin-inline: auto;
-    ;
 }
 
 .fs-vd-row .kk-col-left .f-vd-wrap video {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
 }
 
 .fs-vd-row .kk-col-right h3 {
@@ -1259,7 +1344,7 @@ section.keto-promo {
     object-fit: cover;
     border-radius: 50%;
     border: 9px solid white;
-    
+
 }
 
 .keto-promo .kk-col-right video::-webkit-media-controls {
@@ -1274,31 +1359,35 @@ section.keto-promo {
     overflow: hidden !important;
 }
 
-.keto-promo .kk-col-right .vd-1{
+.keto-promo .kk-col-right .vd-1 {
     width: 381px;
     height: 381px;
 
 }
 
-.keto-promo .kk-col-right .vd-1 video{
+.keto-promo .kk-col-right .vd-1 video {
     min-width: 381px;
 }
-.keto-promo .kk-col-right .vd-2{
+
+.keto-promo .kk-col-right .vd-2 {
     width: 193px;
     height: 193px;
     margin-top: 345px;
     margin-left: -25px;
 }
-.keto-promo .kk-col-right .vd-2 video{
+
+.keto-promo .kk-col-right .vd-2 video {
     min-width: 193px;
 }
-.keto-promo .kk-col-right .vd-3{
+
+.keto-promo .kk-col-right .vd-3 {
     width: 270px;
     height: 270px;
     margin-top: 60px;
     margin-left: -123px;
 }
-.keto-promo .kk-col-right .vd-3 video{
+
+.keto-promo .kk-col-right .vd-3 video {
     min-width: 270px;
 }
 
@@ -1350,22 +1439,26 @@ footer .cnt ul li:nth-child(1) {
 
 
 @media screen and (max-width:1580px) {
-    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two{
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
         right: -25px;
     }
 
-    header .kk-container, section.kk-banner .kk-container {
+    header .kk-container,
+    section.kk-banner .kk-container {
         max-width: 1360px;
     }
 
-   
+
 
     .fs-vd-row .kk-col-right h3 {
         font-size: 40px;
     }
 }
+
 @media screen and (max-width:1480px) {
-    header .kk-container, section.kk-banner .kk-container {
+
+    header .kk-container,
+    section.kk-banner .kk-container {
         max-width: 1280px;
     }
 
@@ -1374,7 +1467,7 @@ footer .cnt ul li:nth-child(1) {
 
     }
 
-    .kk-banner .kk-col-right .kk-bnr-img img{
+    .kk-banner .kk-col-right .kk-bnr-img img {
         min-height: 599px;
     }
 
@@ -1402,11 +1495,13 @@ footer .cnt ul li:nth-child(1) {
         font-size: 16px;
     }
 
-   
+
 }
 
-@media screen and (max-width:1299px){
-    header .kk-container, section.kk-banner .kk-container {
+@media screen and (max-width:1299px) {
+
+    header .kk-container,
+    section.kk-banner .kk-container {
         max-width: 1140px;
     }
 
@@ -1440,11 +1535,13 @@ footer .cnt ul li:nth-child(1) {
     }
 
     .kk-banner .kk-col-left .cnt h3 {
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 30px;
+        line-height: 150%;
     }
 
-    .kk-banner .kk-col-left .kk-testimonial, .keto-purpose .kk-col-left .kk-testimonial {
+    .kk-banner .kk-col-left .kk-testimonial,
+    .keto-purpose .kk-col-left .kk-testimonial {
         margin-top: 47px;
         max-width: 70%;
     }
@@ -1504,7 +1601,7 @@ footer .cnt ul li:nth-child(1) {
         width: 210px;
         height: 210px;
         margin-top: 52px;
-    margin-left: -70px;
+        margin-left: -70px;
     }
 
     .keto-promo .kk-col-right .vd-3 video {
@@ -1525,19 +1622,21 @@ footer .cnt ul li:nth-child(1) {
     .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
         right: -15px;
     }
+
     .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl {
-        padding: 5px 10px 5px 12px;
+        padding: 8px 16px;
     }
 
-    .kk-banner .kk-col-left .kk-testimonial p, .keto-purpose .kk-col-left .kk-testimonial p {
+    .kk-banner .kk-col-left .kk-testimonial p,
+    .keto-purpose .kk-col-left .kk-testimonial p {
         font-size: 14px;
     }
 
-    .kk-banner .kk-col-right .kk-bbl-one-indicator{
+    .kk-banner .kk-col-right .kk-bbl-one-indicator {
         top: 78px;
     }
 
-    .cheats-wrapper .cheat-slided.slided-crav img{
+    .cheats-wrapper .cheat-slided.slided-crav img {
         max-width: 68%;
     }
 
@@ -1547,7 +1646,8 @@ footer .cnt ul li:nth-child(1) {
     }
 
     section.keto-fomo .fomo-cnt ul li {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: left;
     }
 
     .keto-fomo .fomo-cnt ul li span.icon svg {
@@ -1603,14 +1703,16 @@ footer .cnt ul li:nth-child(1) {
         font-size: 16px;
     }
 
-    .keto-faq .acc-cnt{
+    .keto-faq .acc-cnt {
         font-size: 14px;
     }
-    
+
 }
 
-@media screen and (max-width: 1150px){
-    header .kk-container, section.kk-banner .kk-container {
+@media screen and (max-width: 1150px) {
+
+    header .kk-container,
+    section.kk-banner .kk-container {
         max-width: 950px;
     }
 
@@ -1626,13 +1728,14 @@ footer .cnt ul li:nth-child(1) {
     section.keto-cheats .cheats-wrapper .slideds-row,
     section.keto-cheats .cheats-wrapper .row-full {
         gap: 30px;
+        overflow: hidden;
     }
 
     .cheats-wrapper .cheat-slided.slided-specs img {
         left: 10px;
         max-width: 100.4%;
-    }   
-    
+    }
+
     .cheats-wrapper .cheat-slided.slided-crav img {
         max-width: 73%;
     }
@@ -1657,30 +1760,47 @@ footer .cnt ul li:nth-child(1) {
         padding: 40px 0;
     }
 
-    section.keto-purpose .keto-row{
+    section.keto-purpose .keto-row {
         flex-direction: column-reverse;
     }
 
-    .keto-purpose .kk-col-right{
+    .keto-purpose .kk-col-right {
         margin-bottom: 30px;
     }
+
     .keto-purpose .kk-col-left,
-    .keto-purpose .kk-col-right{
+    .keto-purpose .kk-col-right {
         width: 100%;
     }
 
-    .keto-purpose .kk-col-left{
+    .keto-purpose .kk-col-left {
         text-align: center;
         padding: 0;
     }
 
-    .keto-purpose .kk-col-left .kk-testimonial{
+    .keto-purpose .kk-col-left .kk-testimonial {
         width: 100%;
+        margin-inline: auto;
     }
+
+
 }
 
-@media only screen and (min-width: 310px) and (max-width: 850px) {
-    header .kk-container{
+@media only screen and (min-width: 210px) and (max-width: 850px) {
+
+    .cnt h2 {
+        font-size: 32px;
+    }
+
+    .cnt p {
+        font-size: 18px;
+    }
+
+    /* br{
+        display: none;
+    } */
+
+    header .kk-container {
         max-width: 98%;
         width: 98%;
     }
@@ -1688,82 +1808,82 @@ footer .cnt ul li:nth-child(1) {
     header {
         padding: 15px 20px;
     }
+
     header nav .kk-logo {
         width: fit-content;
     }
 
     header nav .kk-flayer .kk-fl-cnt p {
-        font-size: 11px;
+        font-size: 10px;
+        text-align: center;
     }
 
-    .kk-container{
+    .kk-container {
         width: 528px;
         max-width: 100%;
-    
+
     }
 
-    .kk-banner .kk-col-left .cnt h3{
+    .kk-banner .kk-col-left .cnt h3 {
         max-width: 63%;
         margin-inline: auto;
     }
 
-    .kk-banner .kk-col-left .cnt h3 br{
+    .kk-banner .kk-col-left .cnt h3 br {
         display: none;
     }
-    
+
     section.kk-banner .kk-container {
         max-width: 90%;
     }
-    .desktop-kk-logo{
+
+    .desktop-kk-logo {
         display: none;
 
     }
 
-    .mobile-kk-logo{
+    .mobile-kk-logo {
         display: block;
 
     }
 
-    .mobile-kk-logo img{
+    .mobile-kk-logo img {
         width: 50px !important;
     }
 
-    .kk-banner .kk-col-left, .kk-banner .kk-col-right {
+    .kk-banner .kk-col-left,
+    .kk-banner .kk-col-right {
         width: 100%;
     }
 
-    .kk-banner .kk-col-left{
+    .kk-banner .kk-col-left {
         text-align: center;
     }
 
     .kk-banner .kk-col-left .kk-testimonial {
-       display: none;
-    }
-
-    .desktop-kk-bnr-img{
         display: none;
     }
-    .mobil-kk-bnr-img{
-        display: block;
-        margin-top: 35px;
+
+    .desktop-kk-bnr-img {
+        display: none;
     }
 
-    .kk-banner .kk-col-right .kk-bbl-one-indicator{
+    .mobil-kk-bnr-img {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .kk-banner .kk-col-right .kk-bbl-one-indicator {
         transform: rotate(-30deg) translateZ(0px);
     }
 
-    
-    .kk-banner .kk-col-right .kk-testimonial {
-        background-color: var(--sky-blue);
-        padding: 5px 10px;
-        border-radius: 10px;
-    }
+
 
     section.kk-keto-abt {
         padding: 20px 0;
     }
 
-    .kk-keto-abt .abt-row{
+    .kk-keto-abt .abt-row {
         flex-direction: column-reverse;
         background-color: transparent;
         width: 100%;
@@ -1771,41 +1891,52 @@ footer .cnt ul li:nth-child(1) {
         border-radius: 10px;
     }
 
-    .kk-keto-abt .abt-row .col{
+    .kk-keto-abt .abt-row .col {
         width: 100%;
     }
 
-    .kk-keto-abt .abt-row .kk-col-left{
+    .kk-keto-abt .abt-row .kk-col-left {
         background-color: white;
         text-align: center;
         padding: 20px 30px;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: -4px;
     }
 
-    .abt-desktop-bg{
+    .kk-keto-abt .abt-row .kk-col-right {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    section.kk-keto-abt .kk-col-right .abt-img img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .abt-desktop-bg {
         display: none !important;
     }
 
-    .abt-mbl-bg{
+    .abt-mbl-bg {
         display: block !important;
     }
 
     section.keto-cheats {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .cheats-wrapper .cheat-slided.slided-specs h3 br,
-    .cheats-wrapper .cheat-slided.slided-crav h3 BR{
+    .cheats-wrapper .cheat-slided.slided-crav h3 BR {
         display: none;
     }
 
     .cheats-wrapper .cheat-slided.slided-specs h3 {
         top: 10px;
-        left: 100px;
+        left: 90px;
     }
 
     .cheats-wrapper .cheat-slided.slided-specs img {
-        left: -38px;
+        left: -20px;
         max-width: 110.4%;
+        height: 70%;
     }
 
     .cheats-wrapper .cheat-slided.slided-crav h3 {
@@ -1819,10 +1950,10 @@ footer .cnt ul li:nth-child(1) {
 
     .cheats-wrapper .cheat-slided.slided-time h3 {
         top: 10px;
-        left: 82%;
+        left: 78%;
     }
 
-    .cheats-wrapper .cheat-slided.slided-time img{
+    .cheats-wrapper .cheat-slided.slided-time img {
         -webkit-transform: scaleX(-1);
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
@@ -1832,9 +1963,10 @@ footer .cnt ul li:nth-child(1) {
         left: 0;
     }
 
-    .cheats-wrapper .cheat-slided.slided-social h3, .cheats-wrapper .cheat-slided.slided-cost h3 {
+    .cheats-wrapper .cheat-slided.slided-social h3,
+    .cheats-wrapper .cheat-slided.slided-cost h3 {
         top: 10px;
-        
+
     }
 
     .cheats-wrapper .cheat-slided.slided-social img {
@@ -1845,32 +1977,32 @@ footer .cnt ul li:nth-child(1) {
 
     .cheats-wrapper .cheat-slided.slided-cost img {
         width: 60%;
-        right: 35%;
+        right: 25%;
         height: 100%;
     }
 
-    .cheats-wrapper .cheat-slided.slided-social h3{
+    .cheats-wrapper .cheat-slided.slided-social h3 {
         left: 25px;
     }
 
-     .cheats-wrapper .cheat-slided.slided-cost h3 {
-       left: 70%;
+    .cheats-wrapper .cheat-slided.slided-cost h3 {
+        left: 70%;
     }
 
     .cheat-rslt .ch-rs-wrapper .kk-col-left,
-    .cheat-rslt .ch-rs-wrapper .kk-col-right{
+    .cheat-rslt .ch-rs-wrapper .kk-col-right {
         width: 100%;
     }
 
-    .cheat-rslt .ch-rs-wrapper .fx.fx-jb.fx-wrap{
+    .cheat-rslt .ch-rs-wrapper .fx.fx-jb.fx-wrap {
         flex-direction: column-reverse;
     }
 
-    .cheat-rslt .ch-rs-wrapper .kk-col-right  .keto-ch-rs-img{
+    .cheat-rslt .ch-rs-wrapper .kk-col-right .keto-ch-rs-img {
         width: 100%;
     }
 
-    .cheat-rslt .ch-rs-wrapper .kk-col-right img{
+    .cheat-rslt .ch-rs-wrapper .kk-col-right img {
         position: initial;
     }
 
@@ -1884,35 +2016,35 @@ footer .cnt ul li:nth-child(1) {
     }
 
     section.keto-fomo {
-        padding: 30px 0 40px;
+        padding: 30px 0 0px;
     }
 
-    section.keto-fomo .fomo-row{
+    section.keto-fomo .fomo-row {
         flex-direction: column-reverse;
     }
 
     section.keto-fomo .kk-col-left,
-    section.keto-fomo .kk-col-right{
+    section.keto-fomo .kk-col-right {
         width: 100%;
     }
 
-    section.keto-fomo .kk-col-left{
+    section.keto-fomo .kk-col-left {
         text-align: center;
         padding: 0;
     }
 
     section.keto-fomo .kk-col-left .fomo-cnt ul {
-       
+
         max-width: 290px;
         margin: auto;
     }
 
-    section.keto-fomo .kk-col-right .fomo-img img{
+    section.keto-fomo .kk-col-right .fomo-img img {
         position: initial;
         margin-bottom: 30px;
     }
 
-    .keto-promo .promo-row{
+    .keto-promo .promo-row {
         flex-direction: column;
     }
 
@@ -1929,8 +2061,8 @@ footer .cnt ul li:nth-child(1) {
 
 
     .keto-promo .kk-col-right .vd-1 video {
-        min-width: 200px;
-        margin-left: -60px;
+        min-width: 100%;
+        margin-left: 10px;
     }
 
     .keto-promo .kk-col-right .vd-3 {
@@ -1945,65 +2077,256 @@ footer .cnt ul li:nth-child(1) {
     }
 
     section.keto-perks {
-        padding: 100px 0;
+        padding: 220px 0;
     }
 
     section.keto-perks .cnt {
         padding-left: 0;
-        width: 75%;
+        width: 100%;
         text-align: center;
         margin-inline: auto;
-        margin-top: -50px;
 
     }
 
-    section.keto-perks .bg-img img{
-        object-position: bottom center  ;
+    section.keto-perks .cnt {
+        padding: 10px;
+    }
+
+    section.keto-perks .bg-img img {
+        object-position: bottom center;
     }
 
     .fs-vd-row {
         flex-direction: column-reverse;
     }
+
     .fs-vd-row .kk-col-left,
     .fs-vd-row .kk-col-right {
         width: 100%;
-        
+
     }
 
-    .fs-vd-row .kk-col-right .cnt{
+    .fs-vd-row .kk-col-right .cnt {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 60px ;
+        margin-bottom: 60px;
     }
+
     section.keto-cheats .cheats-wrapper .kk-col-left,
-    section.keto-cheats .cheats-wrapper .kk-col-right{
+    section.keto-cheats .cheats-wrapper .kk-col-right {
         width: 100%;
     }
 
 
     section.keto-cheats .cheats-wrapper {
-        margin-top: 50px;
+        margin-top: 04px;
+    }
+
+
+
+    .mobile-kk-logo img {
+        width: 39px !important;
+        height: 39px !important;
+    }
+
+    header nav .kk-logo img {
+        width: 91px !important;
+        height: auto !important;
+
+    }
+
+    section.kk-banner {
+        padding: 50px 0 45px 0;
+    }
+
+    a.kk-get-start.bnr-btn {
+        font-size: 16px;
+        padding: 16px 52px;
+    }
+
+    a.kk-get-start {
+        font-size: 10px;
+        padding: 10px 18px;
+    }
+
+    .kk-banner .kk-col-right .kk-testimonial {
+        background-color: var(--sky-blue);
+        padding: 8px 11px;
+        border-radius: 10px;
+        margin-top: 35px;
+    }
+
+    .kk-testimonial p {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .kk-banner .kk-col-left .cnt h1 {
+        font-size: 40px;
+    }
+
+    #infinite div.keto-prod-barrier::before,
+    #infinite div.keto-prod-barrier::after {
+        background: none;
+    }
+
+    #infinite div.keto-prod-barrier ul.keto-prod-lane li.keto-prod-slide {
+        animation: translateinfinite 50s linear infinite;
+    }
+
+    section.keto-fomo.keto-benefits .fomo-cnt ul li span.icon svg {
+        background-color: #f8cf01;
+    }
+
+    section.keto-fomo.keto-benefits .fomo-row {
+        flex-direction: column;
+    }
+
+
+
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
+        right: 15px;
+    }
+
+    section.keto-promo {
+        margin-top: 180px;
+    }
+
+    .keto-promo .bg-img {
+        display: none;
+    }
+
+    .keto-promo .kk-col-right .vd-3,
+    .keto-promo .kk-col-right .vd-2 {
+        display: none;
+    }
+
+    .keto-promo .kk-col-right .vd-1 {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: -53%;
+        left: 0;
+        transform: translateX(11%);
+    }
+
+    .fs-vd-row .kk-col-right h3 {
+        font-size: 25px;
+        padding: 6px 16px;
+    }
+
+    .fs-vd-row .kk-col-right h3:nth-child(1)::before {
+        font-size: 78px;
+        left: -20px;
+        top: 1px;
+    }
+
+    .fs-vd-row .kk-col-right h3:nth-child(3)::before {
+        font-size: 78px;
+        bottom: -35px;
+        right: -12px;
+    }
+
+    .fs-vd-row .kk-col-right h3:nth-child(3) {
+        transform: translateX(-5%) rotate(-5deg) translateZ(0px);
+    }
+
+    .fs-vd-row .kk-col-right h2 {
+        font-size: 37px;
+        margin: 12px 0;
+        transform: translateX(0%) rotate(-3deg) translateZ(0px);
+    }
+
+    section.keto-products .cnt svg {
+        max-width: 50%;
+
+    }
+
+    #ft {
+        display: none;
+    }
+
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl {
+        background-color: #ffffffd4;
+    }
+
+    section.keto-perks .bg-img img {
+        border-radius: 0;
+    }
+
+
+    section.keto-cheats .top-heading h1 {
+        font-size: 37px;
+        font-weight: 600;
+        padding: 0 30px;
+    }
+
+    .cheats-wrapper .cheat-slided h3 {
+        font-size: 22px;
+    }
+
+    section.keto-cheats .cheats-wrapper .cheat-slided {
+        min-height: 192px;
+    }
+
+    section.keto-cheats .cheats-wrapper .slideds-row,
+    section.keto-cheats .cheats-wrapper .row-full {
+        overflow: visible;
+
+    }
+
+    .keto-faq .sec-head h1 {
+        font-size: 32px;
+    }
+
+    section.keto-purpose {
+        padding: 0 0 40px 0;
+    }
+
+    .mbl{
+        display: block;
+    }
+
+    .dskptop{
+        display: none;
+    }
+
+    .fs-vd-row .kk-col-right h3:nth-child(1) {
+        margin-top: 30px;
+    }
+    section.keto-purpose .kk-col-right .kk-testimonial{
+        margin-top: 30px;
     }
     
-    .fs-vd-row .kk-col-left .f-vd-wrap {
-        max-width: 80%;
+    section.keto-purpose .kk-col-right .kk-testimonial .kk-row-testimonial {
+        padding: 10px;
+        border-radius: 8px;
+        background-color: var(--sky-blue);
+    }
+
+    section.keto-purpose .kk-col-right .kk-testimonial .kk-row-testimonial img{
+        border-radius: 50%;
     }
 }
 
+
+
 @media only screen and (min-width: 550px) and (max-width: 850px) {
-    .kk-banner .kk-col-right .kk-bnr-img-wrpr{
+    .kk-banner .kk-col-right .kk-bnr-img-wrpr {
         max-width: 100%;
         margin: auto;
     }
 
     .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
-        top: 30px;
+        top: 11%;
         left: 23px;
     }
 
-    .kk-banner .kk-col-right .kk-bbl-one-indicator{
-       left: 50px;
+    .kk-banner .kk-col-right .kk-bbl-one-indicator {
+        left: 35px;
+        width: 5%;
+        top: 20%;
     }
 
     .kk-testimonial {
@@ -2011,167 +2334,239 @@ footer .cnt ul li:nth-child(1) {
         margin: 30px auto 0;
     }
 
-    .cnt h2 {
-        font-size: 32px;
-    }
 
-    .cnt p {
-        font-size: 18px;
-    }
-
-    section.keto-cheats .top-heading h1 {
-        font-size: 37px;
-    }
-
-
-    section.keto-cheats .cheats-wrapper .slideds-row{
+    section.keto-cheats .cheats-wrapper .slideds-row {
         max-width: 528px;
         margin: 30px auto 0;
-    }
-
-   
-
-
-    .cheats-wrapper .cheat-slided h3 {
-        font-size: 22px;
-    }
-
-    header nav .kk-flayer .kk-fl-cnt p{
-        display: none;
     }
 
     .fs-vd-row .kk-col-right h3 {
         font-size: 22px;
     }
 
-    .fs-vd-row .kk-col-right h2 {
-        font-size: 30px;
-        margin: 12PX 0;
+    .keto-promo .kk-col-left {
+        margin-top: 230px;
     }
 
-    .fs-vd-row .kk-col-right h3:nth-child(1)::before,
-    .fs-vd-row .kk-col-right h3:nth-child(3)::before{
-        font-size: 120px;
+
+    .fs-vd-row .kk-col-left .f-vd-wrap {
+        max-width: 80%;
     }
 
-    
-   
+    section.keto-promo {
+        max-width: 528px;
+        margin-inline: auto;
+        border-radius: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 651px) and (max-width: 850px) {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
+        max-width: 30.5vw;
+        padding: 4px 16px;
+        top: 30%;
+
+
+
+    }
+
+    .kk-banner .kk-col-right .kk-bbl-two-indicator {
+        width: 11%;
+        top: 43%;
+        left: 53%;
+    }
+
+    .kk-banner .kk-col-right .kk-bbl p {
+        font-size: 2vw;
+    }
+
+    section.keto-perks .cnt {
+        margin-top: -400px;
+    }
+
+    section.keto-perks {
+        margin-top: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 210px) and (max-width: 650px) {
+    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
+        max-width: 43vw;
+        top: 30%;
+        padding: 4px 16px;
+    }
+
+    .kk-banner .kk-col-right .kk-bbl-two-indicator {
+        top: 44%;
+        left: 52%;
+    }
+
+    .kk-banner .kk-col-right .kk-bbl p {
+        font-size: 3vw;
+    }
+
+    section.keto-perks .cnt {
+        margin-top: -280px;
+    }
+
+    section.keto-perks {
+        padding: 185px 0;
+        margin-top: 100px;
+    }
+
 }
 
 @media only screen and (min-width: 300px) and (max-width: 549px) {
-    header nav .kk-flayer .kk-fl-cnt p {
-        display: none;
-    }
+
     .kk-container {
-        width: 92%;
+        width: 85%;
         max-width: 100%;
     }
 
-    .cheats-wrapper .cheat-slided h3 {
-        font-size: 15px;
-    }
-
-    section.keto-cheats .top-heading h1 {
-        font-size: 27px;
-    }
-
-    .cnt h2 {
-        font-size: 22px;
-    }
-
-    .mobile-kk-logo img {
-        width: 30px !important;
-    }
-
-    .kk-banner .kk-col-left .cnt h1 {
-        font-size: 28px;
-    }
     .kk-banner .kk-col-left .cnt h3 {
         max-width: 90%;
         margin-inline: auto;
     }
 
-    .promo-vd-wrapper .row{
+    .promo-vd-wrapper .row {
         flex-direction: column;
     }
 
     .keto-promo .kk-col-right .vd-1 video,
     .keto-promo .kk-col-right .vd-2 video,
-    .keto-promo .kk-col-right .vd-3 video{
+    .keto-promo .kk-col-right .vd-3 video {
         margin-inline: auto;
     }
 
     .keto-promo .kk-col-right .vd-1,
     .keto-promo .kk-col-right .vd-2,
-    .keto-promo .kk-col-right .vd-3{
+    .keto-promo .kk-col-right .vd-3 {
         margin-inline: auto;
     }
 
-    .kk-banner .kk-col-right .kk-bbl p {
-        font-size: 8px;
-    }
+
 
     .kk-banner .kk-col-right .kk-bnr-img img {
         min-height: 270px;
     }
 
     .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-one {
-        top: 14px;
-        left: 5px;
+        top: 10%;
+        left: 20px;
+        padding: 4px 16px 4px 18px;
     }
 
-    .kk-banner .kk-col-right .kk-bbl-one-indicator{
-        left: 30px;
-        top: 58px;
+    .kk-banner .kk-col-right .kk-bbl-one-indicator {
+        left: 25px;
+        top: 19%;
+        width: 5%;
     }
 
-    .kk-banner .kk-col-right .kk-bnr-img-cnt .kk-bbl-two {
-        right: 15px;
-    }
+
 
     .kk-testimonial {
         margin-top: 60px;
         max-width: 100%;
     }
 
-    .kk-testimonial p {
-        font-size: 10px;
-    }
+
 
     .cheats-wrapper .cheat-slided.slided-crav h3 {
         left: 40%;
     }
 
-    section.keto-cheats .cheats-wrapper .cheat-slided{
-        min-height: 130px;
-    }
 
     section.keto-featured-vd {
         padding: 50px 0;
     }
-    
-    .keto-promo .kk-col-right .vd-2{
+
+    .keto-promo .kk-col-right .vd-2 {
         margin-top: 35px;
     }
 
-    .fs-vd-row .kk-col-right h3 {
-        font-size: 14px;
+    .keto-purpose .kk-col-left .kk-testimonial {
+        max-width: 100%;
     }
 
-    .fs-vd-row .kk-col-right h2 {
-        font-size: 22px;
-        margin: 12px 0;
+    section.keto-promo {
+        margin-inline: 5%;
+        border-radius: 10px;
     }
 
-    .keto-purpose .kk-col-left .kk-testimonial{
+    .fs-vd-row .kk-col-left .f-vd-wrap {
         max-width: 100%;
     }
 }
 
 
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+    .keto-promo .kk-col-left {
+        margin-top: 200px;
+    }
 
 
+}
 
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    section.keto-perks .cnt {
+        padding-left: 0;
+        width: 76%;
+        text-align: center;
+        margin-inline: auto;
 
+    }
 
+    header nav .kk-flayer .kk-fl-cnt p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
 
+@media only screen and (min-width: 210px) and (max-width: 450px) {
+    .keto-promo .kk-col-left {
+        margin-top: 120px;
+    }
+
+    section.keto-perks .cnt {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-inline: auto;
+
+    }
+
+    section.keto-perks .cnt {
+        padding: 10px;
+    }
+
+    .cheats-wrapper .cheat-slided.slided-crav h3 {
+        left: 40%;
+        max-width: 50%;
+    }
+
+    .cheats-wrapper .cheat-slided.slided-cost h3 {
+        left: 56%;
+    }
+
+    .cheats-wrapper .cheat-slided.slided-time img {
+        height: 72%;
+        left: 15%;
+    }
+
+    .cheats-wrapper .cheat-slided.slided-social img {
+        height:auto;
+    }
+
+    .cheats-wrapper .cheat-slided.slided-cost img {
+        height: auto;
+        width: auto;
+        right: 2%;
+    }
+
+   
+    section.keto-cheats .cheat-rslt .cnt h2 {
+        padding: 10px;
+    }
+}
